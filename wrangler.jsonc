@@ -1,0 +1,9 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "mvp-website",
+  "main": "dist/worker.js",
+  "compatibility_date": "2026-09-01",
+  "build": {
+    "command": "node scripts/build-worker.mjs"
+  }
+}
