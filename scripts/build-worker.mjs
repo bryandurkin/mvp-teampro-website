@@ -4,7 +4,12 @@ import { readFileSync, readdirSync, statSync, mkdirSync, writeFileSync } from "n
 import { join, extname, relative } from "node:path";
 
 const root = new URL("..", import.meta.url).pathname;
-const include = [\n  ...readdirSync(root).filter((name) => extname(name).toLowerCase() === ".html"),\n  "styles.css",\n  "script.js",\n  "assets",\n];
+const include = [
+  ...readdirSync(root).filter((name) => extname(name).toLowerCase() === ".html"),
+  "styles.css",
+  "script.js",
+  "assets",
+];
 const types = {
   ".html": "text/html; charset=utf-8",
   ".css": "text/css; charset=utf-8",
@@ -45,9 +50,18 @@ function decode(b64) {
 export default {
   async fetch(request) {
     let path = new URL(request.url).pathname;
+
     if (path.endsWith("/")) path += "index.html";
+
+    // Support clean page URLs like /home-services-franchises
+    if (!FILES[path] && !path.includes(".")) {
+      const htmlPath = path + ".html";
+      if (FILES[htmlPath]) path = htmlPath;
+    }
+
     const file = FILES[path];
     if (!file) return new Response("Not found", { status: 404 });
+
     if (!cache.has(path)) cache.set(path, decode(file.body));
     return new Response(cache.get(path), {
       headers: {
