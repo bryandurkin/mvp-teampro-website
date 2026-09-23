@@ -4,7 +4,7 @@ import { readFileSync, readdirSync, statSync, mkdirSync, writeFileSync } from "n
 import { join, extname, relative } from "node:path";
 
 const root = new URL("..", import.meta.url).pathname;
-const include = ["index.html", "styles.css", "script.js", "assets"];
+const include = [\n  ...readdirSync(root).filter((name) => extname(name).toLowerCase() === ".html"),\n  "styles.css",\n  "script.js",\n  "assets",\n];
 const types = {
   ".html": "text/html; charset=utf-8",
   ".css": "text/css; charset=utf-8",
