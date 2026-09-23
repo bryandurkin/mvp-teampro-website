@@ -1,9 +1,10 @@
 // Bundles the static site into a single Worker script (dist/worker.js).
 // Assets are embedded so deploys don't depend on Workers Static Assets uploads.
 import { readFileSync, readdirSync, statSync, mkdirSync, writeFileSync } from "node:fs";
-import { join, extname, relative } from "node:path";
+import { join, extname, relative, sep } from "node:path";
+import { fileURLToPath } from "node:url";
 
-const root = new URL("..", import.meta.url).pathname;
+const root = fileURLToPath(new URL("..", import.meta.url));
 const include = [
   ...readdirSync(root).filter((name) => extname(name).toLowerCase() === ".html"),
   "styles.css",
@@ -33,7 +34,7 @@ for (const entry of include) {
   for (const file of walk(join(root, entry))) {
     const type = types[extname(file).toLowerCase()];
     if (!type) continue;
-    files["/" + relative(root, file)] = { type, body: readFileSync(file).toString("base64") };
+    files["/" + relative(root, file).split(sep).join("/")] = { type, body: readFileSync(file).toString("base64") };
   }
 }
 
