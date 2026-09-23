@@ -76,3 +76,5 @@ export default {
 mkdirSync(join(root, "dist"), { recursive: true });
 writeFileSync(join(root, "dist/worker.js"), worker);
 console.log(`Bundled ${Object.keys(files).length} files into dist/worker.js`);
+
+// Multi-page build enabled
