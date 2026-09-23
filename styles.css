@@ -231,3 +231,18 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
   .hs-proof-grid,.hs-four-grid,.hs-six-grid,.hs-result-stats{grid-template-columns:1fr}.hs-proof-grid article:nth-child(even){border-left:0}.hs-proof-grid article:nth-child(n+2){border-top:1px solid #e1ebf2}
   .hs-journey{grid-template-columns:repeat(3,1fr)}.hs-toolmarks{grid-template-columns:1fr 1fr}
 }
+
+
+/* Home Services visual corrections */
+.hs-longterm{
+  background:linear-gradient(135deg,#07375f,#075b93);
+  color:#fff;
+  padding:34px 0 38px;
+}
+.hs-longterm .eyebrow{color:#73cdf6}
+.hs-longterm h2{color:#fff}
+.hs-longterm .hs-three-grid article{
+  background:rgba(255,255,255,.98);
+  border-color:rgba(255,255,255,.16);
+  box-shadow:0 10px 28px rgba(3,38,67,.14);
+}
