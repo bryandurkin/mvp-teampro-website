@@ -20,6 +20,8 @@ Read this whole file before changing anything.
 
 When adding a new page, add its link to partials/header.html, and to partials/footer.html if it belongs there.
 
+Hidden until its page exists: "Results" was removed from the header and footer menus because there is no Results page yet. When the Results page is built, add it back to partials/header.html as a top-level link between the Industries dropdown and the Resources dropdown, and to the footer menu between Industries and Resources, pointing to the new page.
+
 A new page in src/ starts from this skeleton. Keep all three include lines and the script line, and fill <main> with library sections:
 
 ```html
