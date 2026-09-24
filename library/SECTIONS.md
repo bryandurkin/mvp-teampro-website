@@ -17,7 +17,7 @@ approved by Bryan, and only then used on a page.
 
 1. Hero
    Headline, text, one or two buttons, image on the right.
-   Optional extras: eyebrow label, overlay card on the image (checklist, quote, or stat list), handwritten note, detail list (Industry / Focus / Channels, as on the case study).
+   Optional extras: eyebrow label, overlay card on the image (checklist, quote, or stat list), handwritten note, detail list (Industry / Focus / Channels, as on the case study), service tags over the photo (Plumbing / HVAC / Electrical / Exterior, as on Home Services).
    Mockups: every page.
 
 2. Icon strip
@@ -38,7 +38,7 @@ approved by Bryan, and only then used on a page.
 
 6. Step band
    A row of steps joined by arrows or a line.
-   Options: dark background with intro text on the left (customer journey), or light background timeline (Ongoing Growth Engine, First 30 Days); numbered or icon steps.
+   Options: dark background with intro text on the left (customer journey), with an optional eyebrow label above the steps; or light background timeline (Ongoing Growth Engine, First 30 Days); numbered or icon steps.
 
 7. Dark statement band
    Dark navy band with two or three columns.
