@@ -229,6 +229,9 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
 .s-steps--dark:has(> .container > .s-note) .s-eyebrow+.s-steps__list{padding-top:52px}
 .s-steps--dark .s-steps__marker{width:52px;height:52px;border:1.5px solid var(--accent-light);background:var(--on-dark-fill)}
 .s-steps--dark .s-steps__item:not(:last-child):after{content:'\2192';top:14px;left:auto;right:-18px;width:auto;height:auto;background:none;font-size:1.125rem;color:var(--accent-light)}
+/* 6E. Rows of four, for journeys with seven or more steps */
+.s-steps--rows .s-steps__list{grid-auto-flow:row;grid-template-columns:repeat(4,minmax(0,1fr));row-gap:36px}
+.s-steps--rows .s-steps__item:nth-child(4n):after{display:none}
 
 /* 7. Dark statement band */
 .s-statement{background:linear-gradient(100deg,var(--band),var(--band-2));color:var(--on-dark)}
@@ -432,6 +435,7 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
   .s-steps__list{grid-auto-flow:row;grid-auto-columns:auto;gap:18px}
   .s-steps__item{display:flex;align-items:flex-start;gap:14px;text-align:left}.s-steps__marker{margin:0}
   .s-steps__item:not(:last-child):after{display:none}
+  .s-steps--rows .s-steps__list{grid-template-columns:1fr;row-gap:18px}
   .s-steps--dark .s-steps__list{grid-template-columns:1fr 1fr}
   .s-steps--dark:has(> .container > .s-note) .s-steps__list,.s-steps--dark:has(> .container > .s-note) .s-eyebrow+.s-steps__list{padding-top:0}
   .s-statement__grid,.s-statement--donut .s-statement__grid{grid-auto-flow:row;grid-template-columns:1fr;gap:24px}

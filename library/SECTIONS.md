@@ -39,6 +39,7 @@ approved by Bryan, and only then used on a page.
 6. Step band
    A row of steps joined by arrows or a line.
    Options: dark background with intro text on the left (customer journey), with an optional eyebrow label above the steps; or light background timeline (Ongoing Growth Engine, First 30 Days); numbered or icon steps.
+   Rows of four (6E): for journeys with seven or more steps, or steps that need a full sentence each. Heading above the steps instead of beside them. Approved for the Customer Support & Follow-Up page.
 
 7. Dark statement band
    Dark navy band with two or three columns.
