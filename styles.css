@@ -157,6 +157,8 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
 .s-icons--stacked{background:var(--white);border:0}
 .s-icons--stacked .s-icons__item{flex-direction:column;text-align:center;gap:8px}
 .s-icons--stacked .s-icons__item+.s-icons__item{border-left:0}
+/* Four-item strip: two rows of two below 900px so long words never overflow */
+@media(max-width:900px){.s-icons__grid{grid-template-columns:1fr 1fr;row-gap:16px}.s-icons__grid>.s-icons__item:nth-child(3){border-left:0}}
 
 /* 3. Intro text block */
 .s-intro__body{max-width:860px;margin:0 auto;text-align:center}
