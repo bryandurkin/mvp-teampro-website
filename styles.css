@@ -23,7 +23,7 @@ h1,h2,h3{color:var(--navy);letter-spacing:-.035em}h2{font-size:clamp(2rem,3vw,2.
 
 .site-header{position:sticky;top:0;z-index:40;background:var(--header-bg);backdrop-filter:blur(12px);border-bottom:1px solid var(--header-line)}
 .nav-wrap{min-height:82px;display:grid;grid-template-columns:auto 1fr auto;gap:30px;align-items:center}
-.brand{display:inline-flex;align-items:center}.brand img{display:block;width:auto;height:52px}
+.brand{display:inline-flex;align-items:center}.brand img{display:block;width:200px;height:auto}
 .primary-nav{display:flex;align-items:stretch;justify-content:center;gap:4px;height:82px}
 .nav-item{position:relative;display:flex;align-items:stretch}
 .nav-link{display:inline-flex;align-items:center;gap:7px;padding:0 13px;border:0;background:transparent;color:var(--navy);font:700 .82rem/1 Manrope,Arial,sans-serif;cursor:pointer;white-space:nowrap}
@@ -40,7 +40,7 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
 .nav-cta{padding-inline:22px;min-height:46px}.menu-toggle{display:none}
 
 .footer{padding:34px 0 20px}.footer-top{display:flex;justify-content:space-between;gap:30px;align-items:center;padding-bottom:22px;border-bottom:1px solid var(--line)}
-.footer-brand{display:flex;align-items:center;gap:22px}.footer-brand .brand img{height:44px}.footer-brand p{font-size:.78rem;max-width:360px;margin:0;color:var(--muted)}.footer nav{display:flex;flex-wrap:wrap;gap:16px}.footer nav a{font-size:.75rem;font-weight:700;color:var(--footer-link)}
+.footer-brand{display:flex;align-items:center;gap:22px}.footer-brand .brand{flex:0 0 auto}.footer-brand .brand img{width:180px}.footer-brand p{font-size:.78rem;max-width:360px;margin:0;color:var(--muted)}.footer nav{display:flex;flex-wrap:wrap;gap:16px}.footer nav a{font-size:.75rem;font-weight:700;color:var(--footer-link)}
 .footer-bottom{display:flex;justify-content:space-between;gap:20px;padding-top:14px;font-size:.7rem;color:var(--footer-muted)}.footer-bottom a{color:var(--footer-muted);margin-left:18px}
 
 @media(max-width:1060px){
@@ -65,7 +65,7 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
 }
 @media(max-width:780px){
   .container{width:min(100% - 30px,680px)}
-  .brand img{height:44px}
+  .brand img{width:160px}
   .nav-wrap{min-height:68px}.primary-nav{top:68px}
   
   
