@@ -4,6 +4,8 @@
   "description": "MVP Team Pro, Referral Team Pro and MVP Authority Hub websites. Each site folder deploys to its own Cloudflare Worker.",
   "scripts": {
     "build:mvpteampro": "node scripts/build-site.mjs mvpteampro",
-    "deploy:mvpteampro": "wrangler deploy -c mvpteampro/wrangler.jsonc"
+    "deploy:mvpteampro": "wrangler deploy -c mvpteampro/wrangler.jsonc",
+    "build:referralteampro": "node scripts/build-site.mjs referralteampro",
+    "deploy:referralteampro": "wrangler deploy -c referralteampro/wrangler.jsonc"
   }
 }

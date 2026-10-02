@@ -3,7 +3,7 @@
 Read this whole file before changing anything.
 
 ## How the site works
-- The repo holds several sites: shared/ (used by all), mvpteampro/ (the live site), referralteampro/ and authorityhub/ (empty for now, do not build them until asked).
+- The repo holds several sites: shared/ (used by all), mvpteampro/ (the live site), referralteampro/ (homepage built, Worker name referral-teampro) and authorityhub/ (empty for now, do not build it until asked).
 - Pages are edited in mvpteampro/src/. Never edit generated files; the build writes them to mvpteampro/dist/ (not committed).
 - shared/ holds styles.css (fonts, colors, buttons, section styles), script.js, shared/partials/ (head, header, footer) and shared/library/ (components.html and SECTIONS.md). A site may override a partial by adding a file with the same name in <site>/partials/.
 - The shared page head lives in shared/partials/head.html (character set, viewport, font links including Caveat, and the stylesheet). Every page includes it with <!-- include: head --> inside <head>, followed by the page's own <title> and meta description. Never paste the shared head tags into a page.

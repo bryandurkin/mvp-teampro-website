@@ -8,7 +8,8 @@ Before changing anything, read [AGENTS.md](AGENTS.md). It covers how pages are b
 
 - `shared/`: styles (fonts, colors, buttons, sections), script, header/footer/head partials, section library. Used by every site.
 - `mvpteampro/`: the MVP Team Pro site (`src/` pages, `assets/`, `library/` reference, `wrangler.jsonc`). Deploys to the Worker `mvp-website`.
-- `referralteampro/`, `authorityhub/`: empty placeholders. Each will get its own `wrangler.jsonc` and Worker.
+- `referralteampro/`: Referral Team Pro site (own header/footer in `partials/`, Worker `referral-teampro`).
+- `authorityhub/`: empty placeholder. It will get its own `wrangler.jsonc` and Worker.
 
 ## Build and deploy
 
