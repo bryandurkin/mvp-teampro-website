@@ -11,12 +11,12 @@ Every placeholder on the Referral Team Pro site is listed here. Fill these in at
 ## Stats and results (add approved items to STATS.md)
 | Page | Section | Placeholder | Needed |
 |---|---|---|---|
-| Home | Results: The Goal Is Not More Activity | [STAT NEEDED] | Verified Referral Team Pro results or case study |
+| Home | How We Measure Progress | None shown yet (section explains what is measured) | Documented client results or case study to add to this section later |
 
 ## Testimonials (add approved quotes to TESTIMONIALS.md)
 | Page | Section | Placeholder | Needed |
 |---|---|---|---|
-| Home | Results: The Goal Is Not More Activity | [TESTIMONIAL NEEDED] | Approved client testimonial, exact words, name and company |
+| Home | How We Measure Progress (or its own section) | None shown yet | Approved client testimonial, exact words, name and company |
 
 ## Links
 | Page | Section | Placeholder | Needed |
