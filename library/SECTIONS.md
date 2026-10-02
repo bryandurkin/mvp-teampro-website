@@ -31,6 +31,9 @@ approved by Bryan, and only then used on a page.
    Cards with icon, heading, and any of: short paragraph, bullet list, check list, link.
    Options: 3, 4, 5 or 6 columns; number badge (1, 2, 3...); big heading stat (5x8 / 5x12 / 7x24 coverage); small stat group inside the card (Results by Service / by Industry).
    Mockups: Common Challenges, How MVP Team Pro Helps, What We Measure, What Clients Can Expect, Our Approach, The Big Picture, Support When You Need It.
+   Two columns (4G, .s-cards--2col): two larger cards side by side, stacking on phones, with an optional centered statement below (.s-intro__body inside the same section). Used for Specialized Programs on the home page.
+   Single callout card (4H, .s-cards--callout): one card, no heading above it, for a short contextual bridge between two pages. Used on the Customer Reactivation page.
+   External links: use the small arrow icon (.ext-icon) inside the link, and open in a new tab with rel="noopener".
 
 5. Feature row
    3 or 4 columns, icon beside or above a heading and text. Light or dark background.
