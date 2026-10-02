@@ -1,6 +1,6 @@
 # MVP Team Pro section library (approved list)
 
-Every page on the site is built ONLY from these 18 section types.
+Every page on the site is built ONLY from these 25 section types (18 original sections plus 7 composition patterns).
 Reference images for each are in mvpteampro/library/mockups/.
 If a new design needs something not on this list, it is added here first,
 approved by Bryan, and only then used on a page.
@@ -13,7 +13,7 @@ approved by Bryan, and only then used on a page.
 - Handwritten notes (Caveat font) are an optional extra any section may use, placed the same way everywhere.
 - Never use em dashes in page text.
 
-## The 18 section types
+## The section types
 
 1. Hero
    Headline, text, one or two buttons, image on the right.
@@ -88,3 +88,35 @@ approved by Bryan, and only then used on a page.
 
 18. Call-to-action band
     Dark band, heading, one line of text, one button, "No pressure" line. Same size on every page.
+    Roomy (18B, .s-cta--roomy): more vertical space, for a page that ends on one strong message. Approved for Referral Team Pro How It Works.
+
+## Composition patterns (19 to 25)
+
+Approved for Referral Team Pro How It Works. They give a page rhythm without changing the brand: same fonts, colors, buttons and spacing.
+Rule: do not turn every list or idea into a card. Before using a card, ask whether the content reads better as typography, a process rail, a split layout, an image, a list, a pull statement or a narrative band. No numbered steps (Step 1, 01 / 02) in these patterns.
+
+19. Editorial split (.s-editorial)
+    A large statement (.s-editorial__statement, optional .s-editorial__sub) on one side, supporting copy, a list, a rail or a visual on the other.
+    Options: 50/50 (default), 40/60 (.s-editorial--40), 60/40 (.s-editorial--60), swapped sides (.s-editorial--reverse), vertically centered (.s-editorial--center).
+    Divided (.s-editorial--divided): two equal columns with one central rule and a heading each (.s-editorial__heading). A lighter alternative to the comparison table.
+
+20. Image plus text offset (.s-offset)
+    A large human photograph with a text panel that overlaps its edge. Optional stacked list or button in the panel.
+    Options: image left (default) or right (.s-offset--reverse). Photos: candid conversation between professionals. No handshakes, headsets or posed sales teams.
+
+21. Named process rail (.s-rail, inside any section; .s-process for a section built around one)
+    Named stages joined by a line and dots, a short sentence under each. No numbers: the names carry the hierarchy.
+    Horizontal on desktop, vertical on phones. .s-rail--vertical keeps it vertical everywhere (for a compact flow inside a split).
+
+22. Large pull statement (.s-pull, or .s-pull__text inside another section)
+    One or two large lines with generous space. The second line goes in a <span> and turns brand blue. Centered option: .s-pull--center.
+
+23. Stacked feature list (.s-stack)
+    Optional small icon, heading and one sentence per item, separated by rules instead of boxes.
+    Options: without icons (.s-stack--plain), two columns (.s-stack--2col). Works on the narrative band.
+
+24. Asymmetrical content grid (.s-asym)
+    One primary idea in a soft panel (.s-asym__primary) takes more space; supporting ideas stack beside it (usually a .s-stack). Options: 60/40 (default), 50/50 (.s-asym--even).
+
+25. Narrative band (.s-narrative)
+    Full-width navy band for one major idea: large headline, short copy, simple columns with dividers (.s-narrative__cols, .s-narrative__col), optional pull statement. No white cards on the band unless genuinely needed.

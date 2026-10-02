@@ -463,3 +463,119 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
   .s-testimonial__card{grid-template-columns:1fr}.s-testimonial__card img{width:100%;height:200px}
   .s-cta .btn{width:100%}
 }
+
+/* ===== Composition patterns (library/SECTIONS.md types 19 to 25) =====
+   Additions only. They reuse the tokens at the top of this file and never change the 18 original section types.
+   Use a card only when the content is genuinely a set of separate items; otherwise prefer these. */
+:where(.s-editorial,.s-offset,.s-process,.s-pull,.s-asym,.s-narrative){position:relative;padding:80px 0;color:var(--text)}
+
+/* 19. Editorial split: a large statement on one side, supporting copy, list or visual on the other. */
+.s-editorial__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:start}
+.s-editorial--40 .s-editorial__grid{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}
+.s-editorial--60 .s-editorial__grid{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr)}
+.s-editorial--reverse .s-editorial__grid>:first-child{order:2}
+.s-editorial--center .s-editorial__grid{align-items:center}
+.s-editorial__statement{margin:0;font-size:clamp(1.9rem,3.2vw,2.75rem);font-weight:800;line-height:1.1;letter-spacing:-.03em;color:var(--ink)}
+.s-editorial__sub{margin:18px 0 0;font-size:1.25rem;font-weight:700;line-height:1.4;color:var(--brand)}
+.s-editorial__body>p{margin:14px 0 0;font-size:var(--fs-body);line-height:1.65}
+.s-editorial__heading{margin:0 0 6px;font-size:1.75rem;line-height:1.15;letter-spacing:-.025em;color:var(--ink)}
+/* Divided variant: two equal columns separated by a single central rule (a lighter alternative to comparison cards). */
+.s-editorial--divided .s-editorial__grid{gap:0}
+.s-editorial--divided .s-editorial__grid>*{padding:4px 56px}
+.s-editorial--divided .s-editorial__grid>:first-child{padding-left:0}
+.s-editorial--divided .s-editorial__grid>:last-child{padding-right:0;border-left:1px solid var(--card-line)}
+
+/* 20. Image plus text offset: a large photo with a text panel that overlaps its edge. */
+.s-offset__grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);align-items:center}
+.s-offset__media img{width:100%;aspect-ratio:5/4;object-fit:cover;border-radius:var(--radius)}
+.s-offset__body{position:relative;margin-left:-72px;padding:44px;border-radius:var(--radius);background:var(--white);box-shadow:var(--shadow-lift)}
+.s-offset--reverse .s-offset__media{order:2}
+.s-offset--reverse .s-offset__body{margin-left:0;margin-right:-72px}
+.s-offset__body>p:not(.s-eyebrow){margin:14px 0 0;line-height:1.65}
+
+/* 21. Named process rail: named stages joined by a line, no numbers. Horizontal by default, .s-rail--vertical stacks. */
+.s-rail{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);margin:8px 0 0;padding:0;list-style:none}
+.s-rail__stage{position:relative;padding:34px 28px 0 0}
+.s-rail__stage:before{content:'';position:absolute;top:5px;left:6px;right:0;height:2px;background:var(--brand-line)}
+.s-rail__stage:last-child:before{display:none}
+.s-rail__stage:after{content:'';position:absolute;top:0;left:0;width:12px;height:12px;border-radius:50%;background:var(--brand);box-shadow:0 0 0 5px var(--brand-soft)}
+.s-rail__stage:not(:last-child)>strong:after{content:'\2192';position:absolute;top:-6px;right:4px;font-size:1rem;line-height:1;color:var(--brand)}
+.s-rail__stage>strong{display:block;font-size:1.375rem;font-weight:800;line-height:1.2;letter-spacing:-.02em;color:var(--ink)}
+.s-rail__stage>p{margin:8px 0 0;font-size:var(--fs-body);line-height:1.55;color:var(--muted)}
+.s-rail--vertical{grid-auto-flow:row;grid-auto-columns:auto}
+.s-rail--vertical .s-rail__stage{padding:0 0 26px 34px}
+.s-rail--vertical .s-rail__stage:before{top:12px;bottom:0;left:5px;right:auto;width:2px;height:auto}
+.s-rail--vertical .s-rail__stage:after{top:5px}
+.s-rail--vertical .s-rail__stage:not(:last-child)>strong:after{display:none}
+.s-rail--vertical .s-rail__stage>strong{font-size:1.125rem}
+.s-process .s-rail{margin-top:36px}
+
+/* 22. Large pull statement: an editorial pause with generous space. The second line goes in a <span>. */
+.s-pull{padding:96px 0}
+.s-pull__text{max-width:920px;margin:0;padding-left:28px;border-left:4px solid var(--brand);font-size:clamp(1.9rem,3.6vw,3rem);font-weight:800;line-height:1.15;letter-spacing:-.03em;color:var(--ink)}
+.s-pull__text span{display:block;color:var(--brand)}
+.s-pull--center .s-pull__text{margin-inline:auto;padding-left:0;border-left:0;text-align:center}
+
+/* 23. Stacked feature list: icon (optional), heading and one sentence, separated by rules instead of boxes. */
+.s-stack{margin:0;padding:0;list-style:none}
+*+.s-stack{margin-top:22px}
+.s-stack>li{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:14px;align-items:start;padding:16px 0;border-top:1px solid var(--card-line)}
+.s-stack>li:last-child{border-bottom:1px solid var(--card-line)}
+.s-stack>li>div{grid-column:2}
+.s-stack--plain>li{grid-template-columns:minmax(0,1fr)}
+.s-stack--plain>li>div{grid-column:1}
+.s-stack strong{display:block;font-size:1.0625rem;line-height:1.35;color:var(--ink)}
+.s-stack p{margin:3px 0 0;font-size:var(--fs-body);line-height:1.55;color:var(--muted)}
+.s-stack--2col{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:40px}
+.s-stack--2col>li:nth-last-child(2):nth-child(odd){border-bottom:1px solid var(--card-line)}
+
+/* 24. Asymmetrical content grid: one primary idea takes more space, supporting ideas stack beside it. */
+.s-asym__grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:56px;align-items:start}
+.s-asym--even .s-asym__grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.s-asym__primary{padding:48px;border-radius:var(--radius);background:var(--brand-soft)}
+.s-asym__primary>p:not(.s-eyebrow){margin:14px 0 0;line-height:1.65}
+
+/* 25. Narrative band: a full-width navy band for one major idea, with simple columns on the dark background. */
+.s-narrative{padding:96px 0;background:linear-gradient(110deg,var(--band),var(--band-2));color:var(--on-dark)}
+.s-narrative .s-title{color:var(--on-dark);font-size:clamp(2rem,3.4vw,2.9rem)}
+.s-narrative .s-eyebrow{color:var(--accent-light)}
+.s-narrative .s-lead,.s-narrative p{color:var(--on-dark-muted)}
+.s-narrative__cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:44px;border-top:1px solid var(--on-dark-line)}
+.s-narrative__col{padding:28px 32px 0 0}
+.s-narrative__col+.s-narrative__col{padding-left:32px;border-left:1px solid var(--on-dark-line)}
+.s-narrative__col h3{margin:0;font-size:1.25rem;color:var(--on-dark)}
+.s-narrative__col p{margin:8px 0 0;line-height:1.6}
+.s-narrative .s-pull__text{margin-top:56px;color:var(--on-dark);border-left-color:var(--accent-light)}
+.s-narrative .s-pull__text span{color:var(--accent-light)}
+.s-narrative .s-link{color:var(--accent-light)}
+.s-narrative .s-stack>li{border-color:var(--on-dark-line)}
+.s-narrative .s-stack strong{color:var(--on-dark)}
+
+/* CTA band with more breathing room, for pages that end on a single strong message. */
+.s-cta--roomy{padding:96px 0}
+
+@media(max-width:900px){
+  .s-editorial__grid,.s-editorial--40 .s-editorial__grid,.s-editorial--60 .s-editorial__grid,.s-asym__grid,.s-asym--even .s-asym__grid{grid-template-columns:1fr;gap:32px}
+  .s-editorial--reverse .s-editorial__grid>:first-child{order:0}
+  .s-editorial--divided .s-editorial__grid>*{padding:0}
+  .s-editorial--divided .s-editorial__grid>:last-child{padding-top:28px;border-left:0;border-top:1px solid var(--card-line)}
+  .s-offset__grid{grid-template-columns:1fr}
+  .s-offset--reverse .s-offset__media{order:0}
+  .s-offset__body,.s-offset--reverse .s-offset__body{margin:-48px 16px 0;padding:30px}
+  .s-rail{grid-auto-flow:row;grid-auto-columns:auto}
+  .s-rail .s-rail__stage{padding:0 0 26px 34px}
+  .s-rail .s-rail__stage:before{top:12px;bottom:0;left:5px;right:auto;width:2px;height:auto}
+  .s-rail .s-rail__stage:after{top:5px}
+  .s-rail .s-rail__stage:not(:last-child)>strong:after{display:none}
+  .s-narrative__cols{grid-template-columns:1fr}
+  .s-narrative__col,.s-narrative__col+.s-narrative__col{padding:22px 0;border-left:0}
+  .s-narrative__col+.s-narrative__col{border-top:1px solid var(--on-dark-line)}
+  .s-stack--2col{grid-template-columns:1fr}
+  .s-stack--2col>li:nth-last-child(2):nth-child(odd){border-bottom:0}
+}
+@media(max-width:780px){
+  :where(.s-editorial,.s-offset,.s-process,.s-asym){padding:52px 0}
+  .s-pull,.s-narrative{padding:64px 0}
+  .s-asym__primary{padding:30px}
+  .s-cta--roomy{padding:64px 0}
+}
