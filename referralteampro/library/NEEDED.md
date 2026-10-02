@@ -6,6 +6,7 @@ Every placeholder on the Referral Team Pro site is listed here. Fill these in at
 | Page | Section | Placeholder | Needed |
 |---|---|---|---|
 | Home | Hero | Photo needed | Hero photo |
+| How It Works | Hero | Photo needed | Hero photo |
 | All pages | Header and footer | MVP Team Pro logo used as a stand-in | Referral Team Pro logo (if one exists) |
 
 ## Stats and results (add approved items to STATS.md)
