@@ -1,9 +1,14 @@
 {
+  // Compatibility shim for the existing Cloudflare Git build on the mvp-website Worker, which runs
+  // from the repo root (root directory "/", deploy command "npx wrangler deploy").
+  // The real configuration for the MVP Team Pro site is mvpteampro/wrangler.jsonc, and this file
+  // deploys the same Worker. Once the Cloudflare build's root directory is switched to
+  // "mvpteampro", this file can be deleted.
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "mvp-website",
-  "main": "dist/worker.js",
+  "main": "mvpteampro/dist/worker.js",
   "compatibility_date": "2026-09-01",
   "build": {
-    "command": "node build-pages.mjs . && node scripts/build-worker.mjs"
+    "command": "node scripts/build-site.mjs mvpteampro"
   }
 }

@@ -1,12 +1,12 @@
 # MVP Team Pro section library (approved list)
 
 Every page on the site is built ONLY from these 18 section types.
-Reference images for each are in library/mockups/.
+Reference images for each are in mvpteampro/library/mockups/.
 If a new design needs something not on this list, it is added here first,
 approved by Bryan, and only then used on a page.
 
 ## Design rules
-- Colors come only from the variables at the top of styles.css (:root). No typed-in hex colors in section styles.
+- Colors come only from the variables at the top of shared/styles.css (:root). No typed-in hex colors in section styles.
 - Brand blue from the logo: #0063fb (add as a variable, for example --brand).
 - Text sizes: body text at least 1rem (16px). Secondary text at least 0.875rem (14px). Only labels, eyebrows and fine print may go down to 0.75rem (12px). Nothing smaller.
 - One class name per section type, with modifier classes for variants (example: .s-cards, .s-cards--4col, .s-cards--numbered).
