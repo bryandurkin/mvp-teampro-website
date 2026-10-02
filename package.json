@@ -1,0 +1,9 @@
+{
+  "name": "mvp-websites",
+  "private": true,
+  "description": "MVP Team Pro, Referral Team Pro and MVP Authority Hub websites. Each site folder deploys to its own Cloudflare Worker.",
+  "scripts": {
+    "build:mvpteampro": "node scripts/build-site.mjs mvpteampro",
+    "deploy:mvpteampro": "wrangler deploy -c mvpteampro/wrangler.jsonc"
+  }
+}
