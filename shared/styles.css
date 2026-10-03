@@ -477,7 +477,7 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
 .s-editorial--center .s-editorial__grid{align-items:center}
 .s-editorial__statement{margin:0;font-size:clamp(1.9rem,3.2vw,2.75rem);font-weight:800;line-height:1.1;letter-spacing:-.03em;color:var(--ink)}
 .s-editorial__sub{margin:18px 0 0;font-size:1.25rem;font-weight:700;line-height:1.4;color:var(--brand)}
-.s-editorial__body>p{margin:14px 0 0;font-size:var(--fs-body);line-height:1.65}
+.s-editorial__body>p:not(.s-eyebrow){margin:14px 0 0;font-size:var(--fs-body);line-height:1.65}
 .s-editorial__heading{margin:0 0 6px;font-size:1.75rem;line-height:1.15;letter-spacing:-.025em;color:var(--ink)}
 /* Divided variant: two equal columns separated by a single central rule (a lighter alternative to comparison cards). */
 .s-editorial--divided .s-editorial__grid{gap:0}
