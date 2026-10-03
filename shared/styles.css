@@ -579,3 +579,67 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
   .s-asym__primary{padding:30px}
   .s-cta--roomy{padding:64px 0}
 }
+
+/* ===== Background treatments and contrast (library/SECTIONS.md, "Background treatments") =====
+   Additions only. Add one of these classes to a section to set its background; text, lists, rails and stacks inside switch
+   to white automatically. Cards placed on a dark section keep their normal colors.
+   Rhythm rules: no more than two light sections in a row; pale blue is an accent, not the default; every long landing
+   page has at least three high-contrast breaks (navy, MVP blue, dark split, photo-led or dark band) before the final CTA. */
+.s-bg-white{background:var(--white)}
+.s-bg-pale{background:var(--brand-soft)}
+.s-bg-navy,.s-editorial--dark,.s-pull--dark{background:var(--band)}
+.s-bg-blue,.s-pull--blue{background:var(--brand)}
+:where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-pull--dark,.s-pull--blue,.s-photo){color:var(--on-dark)}
+:where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-pull--dark,.s-pull--blue,.s-photo) :is(.s-title,.s-editorial__statement,.s-editorial__heading,.s-pull__text){color:var(--on-dark)}
+:where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) :is(.s-features__item h3,.s-steps__item strong,.s-rail__stage>strong,.s-stack strong){color:var(--on-dark)}
+:where(.s-bg-navy,.s-editorial--dark,.s-photo) :is(.s-lead,.s-features__item p,.s-steps__item p,.s-rail__stage>p,.s-stack p){color:var(--on-dark-muted)}
+:where(.s-bg-navy,.s-editorial--dark,.s-photo) :is(.s-eyebrow,.s-editorial__sub,.s-icon,.s-link){color:var(--accent-light)}
+:where(.s-bg-navy,.s-editorial--dark,.s-pull--dark,.s-photo) .s-pull__text{border-left-color:var(--accent-light)}
+:where(.s-bg-navy,.s-editorial--dark,.s-pull--dark,.s-photo) .s-pull__text span{color:var(--accent-light)}
+:where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) :is(.s-intro__body,.s-editorial__body,.s-features__item,.s-logos__grid)>p{color:var(--on-dark-muted)}
+:where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) :is(.s-intro__body,.s-editorial__body,.s-editorial__grid>div,.s-logos__grid>div)>p strong{color:var(--on-dark)}
+/* On MVP blue, body text and accents stay white for contrast; the first line of a pull statement softens instead. */
+:where(.s-bg-blue) :is(.s-lead,.s-features__item p,.s-steps__item p,.s-rail__stage>p,.s-stack p,.s-intro__body>p,.s-editorial__body>p,.s-editorial__grid>div>p){color:var(--on-dark)}
+:where(.s-bg-blue) :is(.s-eyebrow,.s-editorial__sub,.s-icon,.s-link){color:var(--on-dark)}
+:where(.s-bg-blue) .s-link{text-decoration:underline}
+:where(.s-bg-blue,.s-pull--blue) .s-pull__text{color:var(--on-dark-muted);border-left-color:var(--on-dark)}
+:where(.s-bg-blue,.s-pull--blue) .s-pull__text span{color:var(--on-dark)}
+/* Lists, rules, rails and stacks on dark backgrounds */
+:where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) .s-list li{color:var(--on-dark)}
+:where(.s-bg-navy,.s-editorial--dark,.s-photo) .s-list li:before{background:var(--accent-light)}
+:where(.s-bg-navy,.s-editorial--dark,.s-photo) .s-list--check li:before{background:var(--on-dark);color:var(--band)}
+:where(.s-bg-blue) .s-list li:before{background:var(--on-dark)}
+:where(.s-bg-blue) .s-list--check li:before{background:var(--on-dark);color:var(--brand)}
+:where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) .s-stack>li{border-color:var(--on-dark-line)}
+:where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) .s-rail__stage:before{background:var(--on-dark-line)}
+:where(.s-bg-navy,.s-editorial--dark,.s-photo) .s-rail__stage:after{background:var(--accent-light);box-shadow:0 0 0 5px var(--on-dark-fill)}
+:where(.s-bg-blue) .s-rail__stage:after{background:var(--on-dark);box-shadow:0 0 0 5px var(--on-dark-track)}
+:where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) .s-rail__stage>strong:after{color:var(--on-dark)}
+:where(.s-bg-navy,.s-bg-blue) .s-editorial--divided .s-editorial__grid>:last-child,.s-editorial--divided:is(.s-bg-navy,.s-bg-blue) .s-editorial__grid>:last-child{border-color:var(--on-dark-line)}
+:where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) .s-features__item+.s-features__item{border-color:var(--on-dark-line)}
+:where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) .btn-secondary{background:transparent;color:var(--on-dark);border-color:var(--on-dark-line)}
+
+/* Dark split: an editorial split on navy, with a light rule between the two sides. */
+.s-editorial--dark .s-editorial__grid>:last-child{padding-left:56px;border-left:1px solid var(--on-dark-line)}
+
+/* Photo-led section: a full-width photograph with a navy overlay and white text over it. */
+.s-photo{position:relative;display:flex;align-items:center;min-height:560px;padding:96px 0;overflow:hidden;background:var(--band)}
+.s-photo__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.s-photo:before{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,var(--band-overlay) 0%,var(--band-overlay) 48%,transparent 100%)}
+.s-photo>.container{position:relative;z-index:2}
+.s-photo__body{max-width:560px}
+.s-photo__body>p:not(.s-eyebrow){margin:14px 0 0;line-height:1.65;color:var(--on-dark-muted)}
+
+/* Dark callout or pull-quote band: a pull statement on navy (.s-pull--dark) or MVP blue (.s-pull--blue). */
+.s-pull--dark,.s-pull--blue{padding:88px 0}
+
+@media(max-width:900px){
+  .s-editorial--dark .s-editorial__grid>:last-child{padding:28px 0 0;border-left:0;border-top:1px solid var(--on-dark-line)}
+  .s-photo{min-height:0}
+  .s-photo:before{background:var(--band-overlay)}
+}
+@media(max-width:780px){
+  .s-photo,.s-pull--dark,.s-pull--blue{padding:64px 0}
+}
+:where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) :is(.s-stack>li:last-child,.s-stack--2col>li:nth-last-child(2):nth-child(odd)){border-color:var(--on-dark-line)}
+:where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) .s-lead strong{color:var(--on-dark)}

@@ -120,3 +120,27 @@ Rule: do not turn every list or idea into a card. Before using a card, ask wheth
 
 25. Narrative band (.s-narrative)
     Full-width navy band for one major idea: large headline, short copy, simple columns with dividers (.s-narrative__cols, .s-narrative__col), optional pull statement. No white cards on the band unless genuinely needed.
+
+## Background treatments and page rhythm
+
+Add one background class to a section. Text, lists, rails and stacks inside a dark section switch to white automatically; cards keep their normal colors.
+
+| Treatment | Class | Use for |
+|---|---|---|
+| White | .s-bg-white (or no class) | Default reading sections |
+| Pale blue | .s-bg-pale (stronger) or .s-soft (lighter) | An accent between white sections. Not the default background |
+| Solid navy | .s-bg-navy | Major narrative moments, important statements, section transitions |
+| Solid MVP blue | .s-bg-blue | Important statements and a strong break; white text and check lists on blue |
+| Dark split | .s-editorial .s-editorial--dark | An editorial split on navy, with a light rule between the sides |
+| Photo-led | .s-photo, .s-photo__img, .s-photo__body | A full-width human photograph with a navy overlay and white text |
+| Dark callout band | .s-pull .s-pull--dark (navy) or .s-pull--blue | One or two large lines on a solid band |
+
+Existing dark sections also count as dark: 5D (.s-features--dark), 6B (.s-steps--dark), 7 (.s-statement), 25 (.s-narrative), 18 (.s-cta).
+
+Rules:
+- Never more than two light sections in a row (white, pale blue and .s-soft are all light).
+- Pale blue is an accent, not the default background.
+- Use navy and MVP blue for major narrative moments, section transitions and important statements.
+- On dark backgrounds, prefer white type and simple lines or icons over white cards.
+- Every long landing page has at least 3 meaningful high-contrast breaks (navy, MVP blue, dark split, photo-led or dark band) before the final CTA. The hero does not count.
+- Only the existing brand colors: navy, MVP blue, white and light blue. No new colors.

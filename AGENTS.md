@@ -56,6 +56,7 @@ Image paths: pages in mvpteampro/src/ use assets/..., not ../assets/.... The lib
 - Text sizes: body at least 16px, secondary at least 14px, only labels and fine print at 12px.
 - Use the logo image in the header and footer. Never recreate it as text.
 - Icons: solid Heroicons, inline SVG.
+- Page rhythm: never more than two light sections in a row, pale blue is an accent not the default, and every long landing page has at least 3 high-contrast breaks (navy, MVP blue, dark split, photo-led or dark band) before the final CTA. See Background treatments in shared/library/SECTIONS.md.
 
 ## Content rules
 - Never invent numbers, stats, results, client names, or testimonials. If a page needs one that has not been supplied, use the placeholder [STAT NEEDED] or [TESTIMONIAL NEEDED] and list it in your report.
