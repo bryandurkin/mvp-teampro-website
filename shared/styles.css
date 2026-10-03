@@ -643,3 +643,4 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
 }
 :where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) :is(.s-stack>li:last-child,.s-stack--2col>li:nth-last-child(2):nth-child(odd)){border-color:var(--on-dark-line)}
 :where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) .s-lead strong{color:var(--on-dark)}
+.s-editorial .s-pull__text{margin-top:56px}
