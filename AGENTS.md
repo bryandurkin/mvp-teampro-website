@@ -3,7 +3,7 @@
 Read this whole file before changing anything.
 
 ## How the site works
-- The repo holds several sites: shared/ (used by all), mvpteampro/ (the live site), referralteampro/ and authorityhub/ (empty for now, do not build them until asked).
+- The repo holds several sites: shared/ (used by all), mvpteampro/ (the live site), referralteampro/ (homepage built, Worker name referral-teampro) and authorityhub/ (empty for now, do not build it until asked).
 - Pages are edited in mvpteampro/src/. Never edit generated files; the build writes them to mvpteampro/dist/ (not committed).
 - shared/ holds styles.css (fonts, colors, buttons, section styles), script.js, shared/partials/ (head, header, footer) and shared/library/ (components.html and SECTIONS.md). A site may override a partial by adding a file with the same name in <site>/partials/.
 - The shared page head lives in shared/partials/head.html (character set, viewport, font links including Caveat, and the stylesheet). Every page includes it with <!-- include: head --> inside <head>, followed by the page's own <title> and meta description. Never paste the shared head tags into a page.
@@ -56,6 +56,7 @@ Image paths: pages in mvpteampro/src/ use assets/..., not ../assets/.... The lib
 - Text sizes: body at least 16px, secondary at least 14px, only labels and fine print at 12px.
 - Use the logo image in the header and footer. Never recreate it as text.
 - Icons: solid Heroicons, inline SVG.
+- Page rhythm: never more than two light sections in a row, pale blue is an accent not the default, and every long landing page has at least 3 high-contrast breaks (navy, MVP blue, dark split, photo-led or dark band) before the final CTA. See Background treatments in shared/library/SECTIONS.md.
 
 ## Content rules
 - Never invent numbers, stats, results, client names, or testimonials. If a page needs one that has not been supplied, use the placeholder [STAT NEEDED] or [TESTIMONIAL NEEDED] and list it in your report.

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Photo needed">
+  <rect width="1200" height="900" fill="#e8f1ff"/>
+  <rect x="24" y="24" width="1152" height="852" fill="none" stroke="#9fc3fd" stroke-width="4" stroke-dasharray="18 14"/>
+  <text x="600" y="462" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="56" font-weight="800" fill="#0b2a5c">Photo needed</text>
+</svg>
