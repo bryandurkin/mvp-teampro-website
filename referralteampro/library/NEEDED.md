@@ -5,7 +5,8 @@ Every placeholder on the Referral Team Pro site is listed here. Fill these in at
 ## Images
 | Page | Section | Placeholder | Needed |
 |---|---|---|---|
-| Home | Hero | Photo needed | Hero photo |
+| Home | Hero | Photo needed | Candid photo: two professionals in genuine conversation |
+| Home | Referrals Shouldn't Stop When Everyone Gets Busy (photo-led) | Photo needed | Candid photo: a business owner meeting a referral partner. No handshakes, headsets or posed sales teams |
 | How It Works | Hero | Photo needed | Candid photo: two professionals in genuine conversation |
 | How It Works | Better Than "Networking More" | Photo needed | Candid photo: small business owners or trusted advisor meeting. No handshakes, headsets or posed sales teams |
 | All pages | Header and footer | MVP Team Pro logo used as a stand-in | Referral Team Pro logo (if one exists) |
