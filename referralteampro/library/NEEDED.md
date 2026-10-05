@@ -21,7 +21,3 @@ Every placeholder on the Referral Team Pro site is listed here. Fill these in at
 |---|---|---|---|
 | Home | How We Measure Progress (or its own section) | None shown yet | Approved client testimonial, exact words, name and company |
 
-## Links
-| Page | Section | Placeholder | Needed |
-|---|---|---|---|
-| All pages | "Build Your Referral System" buttons | Goes to # (no booking page yet) | Booking or scheduling link |
