@@ -660,3 +660,6 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
 /* Dark logo strip (15B): text in the logo column stays readable. Callout card (4H) on a dark band gets full section spacing. */
 .s-logos--dark .s-logos__grid>div>p:not(.s-eyebrow){color:var(--on-dark-muted)}
 .s-cards--callout:is(.s-bg-navy,.s-bg-blue){padding:72px 0}
+:where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) .s-stats__tile .s-icon{color:var(--brand)}
+/* An eyebrow label inside a card keeps label size and brand color (card paragraph styles were overriding it). */
+.s-cards__item p.s-eyebrow{margin:12px 0 0;font-size:var(--fs-label);font-weight:800;line-height:1.4;color:var(--brand)}
