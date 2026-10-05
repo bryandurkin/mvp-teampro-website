@@ -657,3 +657,6 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
 .s-cards--detail .s-cards__item p+p,.s-cards--detail .s-cards__item p+.s-list{margin-top:10px}
 .s-cards--detail .s-cards__item .s-list+p{margin-top:14px;padding-top:14px;border-top:1px solid var(--card-line)}
 .s-cards--detail .s-cards__item h3+p{font-weight:600;color:var(--ink)}
+/* Dark logo strip (15B): text in the logo column stays readable. Callout card (4H) on a dark band gets full section spacing. */
+.s-logos--dark .s-logos__grid>div>p{color:var(--on-dark-muted)}
+.s-cards--callout:is(.s-bg-navy,.s-bg-blue){padding:72px 0}
