@@ -650,3 +650,5 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
 :where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) .s-cards__item .s-list li:before{background:var(--brand)}
 :where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) .s-cards__item .s-list--check li:before{color:var(--on-dark)}
 :where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) .s-cards__item p strong{color:inherit}
+/* Hero option: portrait photos anchor the crop near the top so the face stays in the same place on every page, whatever the hero height. */
+.s-hero__media--portrait>img{object-position:50% 18%}

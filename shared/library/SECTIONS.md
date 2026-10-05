@@ -17,6 +17,7 @@ approved by Bryan, and only then used on a page.
 
 1. Hero
    Headline, text, one or two buttons, image on the right.
+   Portrait option (.s-hero__media--portrait on .s-hero__media): anchors the photo crop near the top so a person's face sits in the same place on every page. Use the full-size photo (home_hero_bryan.jpg), not the small founder_portrait.webp.
    Optional extras: eyebrow label, large subheadline under the headline, overlay card on the image (checklist, quote, or stat list), handwritten note, detail list (Industry / Focus / Channels, as on the case study), service tags over the photo (Plumbing / HVAC / Electrical / Exterior, as on Home Services).
    Mockups: every page.
 
