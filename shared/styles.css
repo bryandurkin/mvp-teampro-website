@@ -644,3 +644,24 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
 :where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) :is(.s-stack>li:last-child,.s-stack--2col>li:nth-last-child(2):nth-child(odd)){border-color:var(--on-dark-line)}
 :where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) .s-lead strong{color:var(--on-dark)}
 .s-editorial .s-pull__text{margin-top:56px}
+/* Cards on a dark or blue background keep their normal light-card colors. */
+:where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) .s-cards__item :is(.s-icon,.s-link){color:var(--brand);text-decoration:none}
+:where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) .s-cards__item .s-list li{color:var(--text)}
+:where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) .s-cards__item .s-list li:before{background:var(--brand)}
+:where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) .s-cards__item .s-list--check li:before{color:var(--on-dark)}
+:where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) .s-cards__item p strong{color:inherit}
+/* Hero option: portrait photos anchor the crop near the top so the face stays in the same place on every page, whatever the hero height. */
+.s-hero__media--portrait>img{object-position:50% 18%}
+/* 4I. Detailed cards: long-form cards with several paragraphs and a list. Spaced paragraphs, a darker opening line, a set-apart closing line. */
+.s-cards--detail .s-cards__item{padding:28px}
+.s-cards--detail .s-cards__item p+p,.s-cards--detail .s-cards__item p+.s-list{margin-top:10px}
+.s-cards--detail .s-cards__item .s-list+p{margin-top:14px;padding-top:14px;border-top:1px solid var(--card-line)}
+.s-cards--detail .s-cards__item h3+p{font-weight:600;color:var(--ink)}
+/* Dark logo strip (15B): text in the logo column stays readable. Callout card (4H) on a dark band gets full section spacing. */
+.s-logos--dark .s-logos__grid>div>p:not(.s-eyebrow){color:var(--on-dark-muted)}
+.s-cards--callout:is(.s-bg-navy,.s-bg-blue){padding:72px 0}
+:where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) .s-stats__tile .s-icon{color:var(--brand)}
+/* An eyebrow label inside a card keeps label size and brand color (card paragraph styles were overriding it). */
+.s-cards__item p.s-eyebrow{margin:12px 0 0;font-size:var(--fs-label);font-weight:800;line-height:1.4;color:var(--brand)}
+/* Hero option: anchor a wide photo's crop toward its left side (keeps people on the left of the image in frame). */
+.s-hero__media--left>img{object-position:30% 50%}
