@@ -663,3 +663,5 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
 :where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) .s-stats__tile .s-icon{color:var(--brand)}
 /* An eyebrow label inside a card keeps label size and brand color (card paragraph styles were overriding it). */
 .s-cards__item p.s-eyebrow{margin:12px 0 0;font-size:var(--fs-label);font-weight:800;line-height:1.4;color:var(--brand)}
+/* Hero option: anchor a wide photo's crop toward its left side (keeps people on the left of the image in frame). */
+.s-hero__media--left>img{object-position:30% 50%}
