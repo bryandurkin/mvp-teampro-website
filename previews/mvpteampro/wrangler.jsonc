@@ -1,0 +1,11 @@
+// Preview Worker for MVP Team Pro redesigns. Same site as mvpteampro/, deployed under a different name so it can be
+// reviewed before anything goes live. The live site is mvpteampro/wrangler.jsonc (Worker mvp-website); never point this at it.
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "mvp-website-preview",
+  "main": "../../mvpteampro/dist/worker.js",
+  "compatibility_date": "2026-09-01",
+  "build": {
+    "command": "cd \"$(git rev-parse --show-toplevel)\" && node scripts/build-site.mjs mvpteampro"
+  }
+}

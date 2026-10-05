@@ -67,5 +67,6 @@ Image paths: pages in mvpteampro/src/ use assets/..., not ../assets/.... The lib
 
 ## Safety
 - Every push to main deploys the live site automatically. Never push without approval.
+- Review MVP Team Pro redesigns on the preview Worker (mvp-website-preview, config in previews/mvpteampro/) from the claude/mvp-redesign branch before merging to main.
 - Never commit or deploy without approval.
 - Always explain what you changed in plain English.

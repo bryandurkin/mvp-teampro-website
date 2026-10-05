@@ -23,6 +23,7 @@ Before changing anything, read [AGENTS.md](AGENTS.md). It covers how pages are b
 | Worker | Root directory | Branch | Deploy command |
 |---|---|---|---|
 | `mvp-website` | `/` (current shim) | `main` | `npx wrangler deploy` |
-| `referral-teampro` | `referralteampro` | `claude/referral-teampro-site` until approved, then `main` | `npx wrangler deploy` |
+| `referral-teampro` | `referralteampro` | `main` | `npx wrangler deploy` |
+| `mvp-website-preview` | `previews/mvpteampro` | `claude/mvp-redesign` (MVP redesign work, reviewed here before merging to `main`) | `npx wrangler deploy` |
 
 Leave the dashboard build command blank. Each site's `wrangler.jsonc` runs its own build.

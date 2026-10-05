@@ -6,6 +6,7 @@
     "build:mvpteampro": "node scripts/build-site.mjs mvpteampro",
     "deploy:mvpteampro": "wrangler deploy -c mvpteampro/wrangler.jsonc",
     "build:referralteampro": "node scripts/build-site.mjs referralteampro",
-    "deploy:referralteampro": "wrangler deploy -c referralteampro/wrangler.jsonc"
+    "deploy:referralteampro": "wrangler deploy -c referralteampro/wrangler.jsonc",
+    "deploy:mvpteampro-preview": "wrangler deploy -c previews/mvpteampro/wrangler.jsonc"
   }
 }
