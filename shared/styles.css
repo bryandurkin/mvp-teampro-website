@@ -652,3 +652,8 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
 :where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) .s-cards__item p strong{color:inherit}
 /* Hero option: portrait photos anchor the crop near the top so the face stays in the same place on every page, whatever the hero height. */
 .s-hero__media--portrait>img{object-position:50% 18%}
+/* 4I. Detailed cards: long-form cards with several paragraphs and a list. Spaced paragraphs, a darker opening line, a set-apart closing line. */
+.s-cards--detail .s-cards__item{padding:28px}
+.s-cards--detail .s-cards__item p+p,.s-cards--detail .s-cards__item p+.s-list{margin-top:10px}
+.s-cards--detail .s-cards__item .s-list+p{margin-top:14px;padding-top:14px;border-top:1px solid var(--card-line)}
+.s-cards--detail .s-cards__item h3+p{font-weight:600;color:var(--ink)}
