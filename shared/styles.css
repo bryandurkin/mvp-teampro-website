@@ -493,22 +493,6 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
 .s-offset--reverse .s-offset__body{margin-left:0;margin-right:-72px}
 .s-offset__body>p:not(.s-eyebrow){margin:14px 0 0;line-height:1.65}
 
-/* 21. Named process rail: named stages joined by a line, no numbers. Horizontal by default, .s-rail--vertical stacks. */
-.s-rail{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);margin:8px 0 0;padding:0;list-style:none}
-.s-rail__stage{position:relative;padding:34px 28px 0 0}
-.s-rail__stage:before{content:'';position:absolute;top:5px;left:6px;right:0;height:2px;background:var(--brand-line)}
-.s-rail__stage:last-child:before{display:none}
-.s-rail__stage:after{content:'';position:absolute;top:0;left:0;width:12px;height:12px;border-radius:50%;background:var(--brand);box-shadow:0 0 0 5px var(--brand-soft)}
-.s-rail__stage:not(:last-child)>strong:after{content:'\2192';position:absolute;top:-6px;right:4px;font-size:1rem;line-height:1;color:var(--brand)}
-.s-rail__stage>strong{display:block;font-size:1.375rem;font-weight:800;line-height:1.2;letter-spacing:-.02em;color:var(--ink)}
-.s-rail__stage>p{margin:8px 0 0;font-size:var(--fs-body);line-height:1.55;color:var(--muted)}
-.s-rail--vertical{grid-auto-flow:row;grid-auto-columns:auto}
-.s-rail--vertical .s-rail__stage{padding:0 0 26px 34px}
-.s-rail--vertical .s-rail__stage:before{top:12px;bottom:0;left:5px;right:auto;width:2px;height:auto}
-.s-rail--vertical .s-rail__stage:after{top:5px}
-.s-rail--vertical .s-rail__stage:not(:last-child)>strong:after{display:none}
-.s-rail--vertical .s-rail__stage>strong{font-size:1.125rem}
-.s-process .s-rail{margin-top:36px}
 
 /* 22. Large pull statement: an editorial pause with generous space. The second line goes in a <span>. */
 .s-pull{padding:96px 0}
@@ -562,11 +546,6 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
   .s-offset__grid{grid-template-columns:1fr}
   .s-offset--reverse .s-offset__media{order:0}
   .s-offset__body,.s-offset--reverse .s-offset__body{margin:-48px 16px 0;padding:30px}
-  .s-rail{grid-auto-flow:row;grid-auto-columns:auto}
-  .s-rail .s-rail__stage{padding:0 0 26px 34px}
-  .s-rail .s-rail__stage:before{top:12px;bottom:0;left:5px;right:auto;width:2px;height:auto}
-  .s-rail .s-rail__stage:after{top:5px}
-  .s-rail .s-rail__stage:not(:last-child)>strong:after{display:none}
   .s-narrative__cols{grid-template-columns:1fr}
   .s-narrative__col,.s-narrative__col+.s-narrative__col{padding:22px 0;border-left:0}
   .s-narrative__col+.s-narrative__col{border-top:1px solid var(--on-dark-line)}
@@ -611,10 +590,6 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
 :where(.s-bg-blue) .s-list li:before{background:var(--on-dark)}
 :where(.s-bg-blue) .s-list--check li:before{background:var(--on-dark);color:var(--brand)}
 :where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) .s-stack>li{border-color:var(--on-dark-line)}
-:where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) .s-rail__stage:before{background:var(--on-dark-line)}
-:where(.s-bg-navy,.s-editorial--dark,.s-photo) .s-rail__stage:after{background:var(--accent-light);box-shadow:0 0 0 5px var(--on-dark-fill)}
-:where(.s-bg-blue) .s-rail__stage:after{background:var(--on-dark);box-shadow:0 0 0 5px var(--on-dark-track)}
-:where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) .s-rail__stage>strong:after{color:var(--on-dark)}
 :where(.s-bg-navy,.s-bg-blue) .s-editorial--divided .s-editorial__grid>:last-child,.s-editorial--divided:is(.s-bg-navy,.s-bg-blue) .s-editorial__grid>:last-child{border-color:var(--on-dark-line)}
 :where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) .s-features__item+.s-features__item{border-color:var(--on-dark-line)}
 :where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) .btn-secondary{background:transparent;color:var(--on-dark);border-color:var(--on-dark-line)}
@@ -665,3 +640,32 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
 .s-cards__item p.s-eyebrow{margin:12px 0 0;font-size:var(--fs-label);font-weight:800;line-height:1.4;color:var(--brand)}
 /* Hero option: anchor a wide photo's crop toward its left side (keeps people on the left of the image in frame). */
 .s-hero__media--left>img{object-position:30% 50%}
+
+/* 21. Named process rail (Option B): each stage sits under a bar that deepens toward the last stage. No numbers, no arrows.
+   Horizontal by default; .s-rail--vertical (and every rail on phones) puts the bar on the left.
+   .s-rail--outcome adds a check mark to the last stage when it is a real outcome (not for loops or cycles). */
+.s-rail{--rail-from:var(--brand-line);--rail-to:var(--brand);display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:14px;margin:8px 0 0;padding:0;list-style:none}
+.s-process .s-rail{margin-top:36px}
+.s-rail__stage{--rail-mix:20%;position:relative;padding:24px 8px 0 0}
+.s-rail__stage:nth-last-child(4){--rail-mix:35%}
+.s-rail__stage:nth-last-child(3){--rail-mix:55%}
+.s-rail__stage:nth-last-child(2){--rail-mix:75%}
+.s-rail__stage:last-child{--rail-mix:100%}
+.s-rail__stage:before{content:'';position:absolute;top:0;left:0;right:0;height:6px;border-radius:3px;background:color-mix(in srgb,var(--rail-to) var(--rail-mix),var(--rail-from))}
+.s-rail__stage>strong{display:block;font-size:1.375rem;font-weight:800;line-height:1.2;letter-spacing:-.02em;color:var(--ink)}
+.s-rail__stage>p{margin:8px 0 0;font-size:var(--fs-body);line-height:1.55;color:var(--muted)}
+.s-rail--outcome .s-rail__stage:last-child>strong:after{content:' \2713';color:var(--rail-to)}
+.s-rail--vertical{grid-auto-flow:row;grid-auto-columns:auto;gap:18px}
+.s-rail--vertical .s-rail__stage{padding:2px 0 2px 24px}
+.s-rail--vertical .s-rail__stage:before{top:0;bottom:0;right:auto;width:5px;height:auto}
+.s-rail--vertical .s-rail__stage>strong{font-size:1.125rem}
+:where(.s-bg-navy,.s-editorial--dark,.s-photo) .s-rail{--rail-from:var(--on-dark-line);--rail-to:var(--accent-light)}
+:where(.s-bg-blue) .s-rail{--rail-from:var(--on-dark-track);--rail-to:var(--on-dark)}
+:where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-photo) .s-rail .s-rail__stage>strong{color:var(--on-dark)}
+:where(.s-bg-navy,.s-editorial--dark,.s-photo) .s-rail .s-rail__stage>p{color:var(--on-dark-muted)}
+:where(.s-bg-blue) .s-rail .s-rail__stage>p{color:var(--on-dark)}
+@media(max-width:900px){
+  .s-rail{grid-auto-flow:row;grid-auto-columns:auto;gap:18px}
+  .s-rail .s-rail__stage{padding:2px 0 2px 24px}
+  .s-rail .s-rail__stage:before{top:0;bottom:0;right:auto;width:5px;height:auto}
+}
