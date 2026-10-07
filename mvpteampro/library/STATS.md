@@ -7,3 +7,4 @@ Add a row only when the number has a source. If a page needs a number that is no
 |---|---|---|---|---|---|
 | Since 1997 | Building remote teams ("Building remote teams since 1997") | Not a client result: Bryan Durkin's own track record | 1997 to present | Not applicable | Bryan Durkin, documented in his books |
 | 1,500 to 300,000+ transactions a day | Growth of an operation Bryan Durkin built ("Grew an operation from 1,500 to 300,000+ transactions a day") | Not a client result: Bryan Durkin's own track record | Not specified | Not applicable | Bryan Durkin, documented in his books |
+| 800+ pages | Size of a website built on a reusable CMS framework from an existing print-based design (the "forklift upgrade" example) | Not named | Not specified | No | Supplied by Bryan Durkin for the Systems, Automation &amp; AI page |
