@@ -108,8 +108,9 @@ Rule: do not turn every list or idea into a card. Before using a card, ask wheth
     Options: image left (default) or right (.s-offset--reverse). Photos: candid conversation between professionals. No handshakes, headsets or posed sales teams.
 
 21. Named process rail (.s-rail, inside any section; .s-process for a section built around one)
-    Named stages joined by a line and dots, a short sentence under each. No numbers: the names carry the hierarchy.
-    Horizontal on desktop, vertical on phones. .s-rail--vertical keeps it vertical everywhere (for a compact flow inside a split).
+    Named stages, each under a bar that deepens in color toward the last stage, with a short sentence under each. No numbers and no arrows: the names and the deepening bars carry the direction.
+    Horizontal on desktop; on phones, and with .s-rail--vertical everywhere, the bar sits on the left of each stage.
+    .s-rail--outcome adds a check mark to the last stage when it is a real outcome. Leave it off for loops and cycles.
 
 22. Large pull statement (.s-pull, or .s-pull__text inside another section)
     One or two large lines with generous space. The second line goes in a <span> and turns brand blue. Centered option: .s-pull--center.
