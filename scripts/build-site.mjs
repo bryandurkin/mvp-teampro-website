@@ -13,6 +13,7 @@ import {
 } from "node:fs";
 import { join, extname, relative, sep } from "node:path";
 import { fileURLToPath } from "node:url";
+import { createHash } from "node:crypto";
 
 const repo = fileURLToPath(new URL("..", import.meta.url));
 
@@ -70,6 +71,13 @@ export function buildSite(site) {
       if (file.endsWith(".html")) partials[file.replace(".html", "")] = readFileSync(join(dir, file), "utf8").trim();
     }
   }
+  // Each page links styles.css and script.js with a short fingerprint of the file
+  // (styles.css?v=1a2b3c4d), so browsers fetch the new copy as soon as either file changes.
+  const versions = {};
+  for (const name of ["styles.css", "script.js"]) {
+    const path = join(pubDir, name);
+    if (existsSync(path)) versions[name] = createHash("sha256").update(readFileSync(path)).digest("hex").slice(0, 8);
+  }
   let built = 0;
   for (const file of readdirSync(srcDir)) {
     if (!file.endsWith(".html")) continue;
@@ -78,6 +86,8 @@ export function buildSite(site) {
       if (!partials[name]) fail(`${site}/src/${file} asks for partial "${name}" but no ${name}.html exists in ${site}/partials or shared/partials.`);
       return partials[name];
     });
+    html = html.replace(/(href|src)="(styles\.css|script\.js)"/g, (match, attr, name) =>
+      versions[name] ? `${attr}="${name}?v=${versions[name]}"` : match);
     writeFileSync(join(pubDir, file), html);
     built++;
   }
