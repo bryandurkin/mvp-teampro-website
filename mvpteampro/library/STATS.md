@@ -16,6 +16,8 @@ Each row is one client's result unless the row says it covers several clients. N
 | Since 1997 | Building remote teams ("Building remote teams since 1997") | Not a client result: Bryan Durkin's own track record | 1997 to present | Not applicable | Bryan Durkin, documented in his books |
 | 1,500 to 300,000+ transactions a day | Growth of an operation Bryan Durkin built ("Grew an operation from 1,500 to 300,000+ transactions a day") | Not a client result: Bryan Durkin's own track record | Not specified | Not applicable | Bryan Durkin, documented in his books |
 | 200+ remote associates, roughly 25 people in the U.S. | Size of that same operation as it grew ("200+ remote associates, alongside roughly 25 people in the U.S.") | Not a client result: Bryan Durkin's own track record | Not specified | Not applicable | Bryan Durkin, documented in his books |
+| 4 U.S. team members plus a trained remote team | Current team size ("4 US team members + a trained remote team") | Not a client result: MVP Team Pro's own team | Current, as of Oct 2026 | Not applicable | Homepage 1.0 brief, Bryan Durkin |
+| 15 years | How long MVP Team Pro has run its multi-touch reactivation process ("We've been running this process for 15 years") | Not a client result: MVP Team Pro's own track record | As of Oct 2026 | Not applicable | Homepage 1.0 brief, Bryan Durkin |
 
 ## Systems, automation and AI
 

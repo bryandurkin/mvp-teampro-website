@@ -19,6 +19,7 @@ approved by Bryan, and only then used on a page.
    Headline, text, one or two buttons, image on the right.
    Portrait option (.s-hero__media--portrait on .s-hero__media): anchors the photo crop near the top so a person's face sits in the same place on every page. Use the full-size photo (home_hero_bryan.jpg), not the small founder_portrait.webp.
    Left-anchored option (.s-hero__media--left): keeps people on the left side of a wide photo in frame.
+   Video option (1F, .s-hero__media--video): a 16:9 video (.s-video, with an iframe inside) in place of the photo, and a caption under it (.s-video__caption). Until the video is ready, .s-video holds a play button (.s-video__play) and a TODO: VIDEO_URL comment. Optional pre-headline line above the H1 (.s-hero__pre). Approved for the Homepage 1.0.
    Optional extras: eyebrow label, large subheadline under the headline, overlay card on the image (checklist, quote, or stat list), handwritten note, detail list (Industry / Focus / Channels, as on the case study), service tags over the photo (Plumbing / HVAC / Electrical / Exterior, as on Home Services).
    Mockups: every page.
 
