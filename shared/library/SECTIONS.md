@@ -19,6 +19,7 @@ approved by Bryan, and only then used on a page.
    Headline, text, one or two buttons, image on the right.
    Portrait option (.s-hero__media--portrait on .s-hero__media): anchors the photo crop near the top so a person's face sits in the same place on every page. Use the full-size photo (home_hero_bryan.jpg), not the small founder_portrait.webp.
    Left-anchored option (.s-hero__media--left): keeps people on the left side of a wide photo in frame.
+   Video option (1F, .s-hero__media--video): a 16:9 slot in place of the photo. A still poster image in brand colors (assets/photos/video_poster.svg) with a play icon (.s-hero__play), and an italic caption under it (.s-hero__caption). An optional line under the button (.s-hero__reassure) holds a short reassurance. When the video is ready, make .s-hero__play a link to the video (or swap in the player) and keep the poster as its cover.
    Optional extras: eyebrow label, large subheadline under the headline, overlay card on the image (checklist, quote, or stat list), handwritten note, detail list (Industry / Focus / Channels, as on the case study), service tags over the photo (Plumbing / HVAC / Electrical / Exterior, as on Home Services).
    Mockups: every page.
 
@@ -72,7 +73,7 @@ approved by Bryan, and only then used on a page.
 
 13. Comparison table
     Two columns, one with crosses, one with checks, the preferred column highlighted.
-    Mockup: Typical VA vs MVP Team Pro Managed Team (How It Works).
+    Mockup: Typical Freelancer vs MVP Team Pro Managed Team (How It Works).
 
 14. Team grid
     Square portraits (cartoon illustrations) with name and role, grouped by department.

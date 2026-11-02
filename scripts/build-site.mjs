@@ -78,6 +78,9 @@ export function buildSite(site) {
     const path = join(pubDir, name);
     if (existsSync(path)) versions[name] = createHash("sha256").update(readFileSync(path)).digest("hex").slice(0, 8);
   }
+  // Shared settings (shared/config.json). A page or partial uses one as {{NAME}}, for example {{LEAK_REPORT_URL}}.
+  const configPath = join(sharedDir, "config.json");
+  const config = existsSync(configPath) ? JSON.parse(readFileSync(configPath, "utf8")) : {};
   let built = 0;
   for (const file of readdirSync(srcDir)) {
     if (!file.endsWith(".html")) continue;
@@ -85,6 +88,10 @@ export function buildSite(site) {
     html = html.replace(/<!--\s*include:\s*([\w-]+)\s*-->/g, (_, name) => {
       if (!partials[name]) fail(`${site}/src/${file} asks for partial "${name}" but no ${name}.html exists in ${site}/partials or shared/partials.`);
       return partials[name];
+    });
+    html = html.replace(/\{\{([A-Z0-9_]+)\}\}/g, (_, key) => {
+      if (!(key in config)) fail(`${site}/src/${file} uses {{${key}}} but shared/config.json has no ${key}.`);
+      return config[key];
     });
     html = html.replace(/(href|src)="(styles\.css|script\.js)"/g, (match, attr, name) =>
       versions[name] ? `${attr}="${name}?v=${versions[name]}"` : match);

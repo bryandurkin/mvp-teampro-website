@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="Explainer video poster">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#062a5e"/>
+      <stop offset="1" stop-color="#0a4396"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect x="150" y="110" width="980" height="500" rx="18" fill="none" stroke="#6cc2ff" stroke-opacity=".45" stroke-width="4"/>
+  <g stroke="#6cc2ff" stroke-opacity=".5" stroke-width="6" stroke-linecap="round" fill="none">
+    <path d="M230 220h300"/>
+    <path d="M230 280h220"/>
+    <path d="M230 340h260"/>
+    <path d="M230 400h180"/>
+    <path d="M760 220h290"/>
+    <path d="M760 280h210"/>
+    <path d="M760 340h250"/>
+    <path d="M760 400h170"/>
+  </g>
+  <g stroke="#0063fb" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M600 330l55 60 110-130" transform="translate(-30 40)"/>
+  </g>
+</svg>
