@@ -91,3 +91,11 @@ In industrial B2B, getting past the gatekeeper to the right person is the hardes
 | 84 | Contacts who asked for more information during the call (14% of 606 called) | Industrial B2B company | 2026 sales blitz, data as of Oct 3, 2026 | No | Case study folder: industrial sales blitz report |
 | 146 | Requests for more information during the call (124 from gatekeepers, 22 from the contacts themselves) | Industrial B2B company | Q2 2026 campaign, data as of Oct 2, 2026 | No | Case study folder: industrial Q2 outreach report |
 | 110 | Bad contacts found and flagged for cleanup: disconnected, left the company or wrong number (6% of contacts called) | Industrial B2B company | Q2 2026 campaign, data as of Oct 2, 2026 | No | Case study folder: industrial Q2 outreach report |
+
+## MVP Team Pro track record (internal data)
+
+| Number | What it measures | Client or "all clients" | Time period | Can we name the client (yes/no) | Source |
+|---|---|---|---|---|---|
+| 15 years | How long MVP Team Pro has been running this process ("15 years running this process") | Not a client result: MVP Team Pro's own track record | 15 years to present | Not applicable | Bryan Durkin, internal data, Nov 2026 |
+| About 20% | Contacts we call in industrial accounts who have changed jobs since the client last spoke to them ("About 20% of the contacts we call in industrial accounts have changed jobs since the client last spoke to them"). Always keep "About" and say it is our own call data | Industrial accounts, our own call data (not one client's result) | Not specified | No | Bryan Durkin, internal data, Nov 2026 |
+| About half | Share of our team who are callers and share who create and publish content ("About half our team are callers and half create and publish content") | Not a client result: how our own team is made up | Nov 2026 | Not applicable | Bryan Durkin, internal data, Nov 2026 |

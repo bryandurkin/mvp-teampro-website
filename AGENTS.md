@@ -8,7 +8,8 @@ Read this whole file before changing anything.
 - shared/ holds styles.css (fonts, colors, buttons, section styles), script.js, shared/partials/ (head, header, footer) and shared/library/ (components.html and SECTIONS.md). A site may override a partial by adding a file with the same name in <site>/partials/.
 - The shared page head lives in shared/partials/head.html (character set, viewport, font links including Caveat, and the stylesheet). Every page includes it with <!-- include: head --> inside <head>, followed by the page's own <title> and meta description. Never paste the shared head tags into a page.
 - The header and footer live in shared/partials/header.html and shared/partials/footer.html. Every page includes them with <!-- include: header --> and <!-- include: footer -->. Never paste header or footer code into a page.
-- Menu links start with / (example: /#services) so they work from any page.
+- Menu links start with / (example: /how-it-works.html) so they work from any page.
+- Shared settings live in shared/config.json. A page or partial uses one as {{NAME}}, and the build fills it in. LEAK_REPORT_URL is the one link every Leak Report button uses, so when the Leak Report form is ready, change that single value and nothing else.
 - Build one site: node scripts/build-site.mjs mvpteampro (the old command node scripts/build-worker.mjs still builds mvpteampro).
 - Each site deploys to its own Cloudflare Worker through <site>/wrangler.jsonc. mvpteampro deploys to the existing Worker mvp-website. Do not reuse the name authority-hub for the Authority Hub site without checking, because a Worker with that name already exists in the account.
 - mvpteampro/library/ holds the approved content lists (TESTIMONIALS.md and STATS.md), the design mockups and library images. shared/library/ holds the approved section library. All of it is reference only and never goes live.
