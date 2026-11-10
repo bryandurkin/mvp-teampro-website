@@ -13,8 +13,8 @@
   --shadow-menu:0 18px 42px rgba(7,57,99,.14);--shadow-menu-mobile:0 18px 32px rgba(8,46,80,.12);--footer-link:#2a4d69;
   --fs-body:1rem;--fs-small:.875rem;--fs-label:.75rem;--radius:12px;--radius-sm:8px;
 }
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Manrope,Arial,sans-serif;color:var(--text);background:var(--white);font-size:16px;line-height:1.6}
-img{max-width:100%;display:block}a{color:var(--blue);text-decoration:none}.container{width:min(1200px,calc(100% - 48px));margin-inline:auto}
+*{box-sizing:border-box}@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}body{margin:0;font-family:Manrope,Arial,sans-serif;color:var(--text);background:var(--white);font-size:16px;line-height:1.6}
+img{max-width:100%;display:block}a{color:var(--brand);text-decoration:none}.container{width:min(1200px,calc(100% - 48px));margin-inline:auto}
 h1,h2,h3{color:var(--navy);letter-spacing:-.035em}h2{font-size:clamp(2rem,3vw,2.8rem);line-height:1.08;margin:0}
 
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;padding:14px 22px;border-radius:8px;font-weight:800;font-size:.94rem;transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
@@ -261,6 +261,7 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
 .s-statement h2{font-size:clamp(1.5rem,2.2vw,1.9rem);line-height:1.15}
 .s-statement h3{font-size:1.5rem}
 .s-statement p:not(.s-eyebrow):not(.s-note){margin:8px 0 0;font-size:var(--fs-body);line-height:1.55;color:var(--on-dark-muted)}
+.s-statement.s-bg-blue p:not(.s-eyebrow):not(.s-note){color:var(--on-dark)}
 .s-statement .s-eyebrow{color:var(--accent-light)}
 .s-statement .s-icon{color:var(--accent-light)}
 .s-statement .s-list li{color:var(--on-dark)}
@@ -696,3 +697,18 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
 @media(max-width:780px){
   .s-hero__media--video{min-height:0;padding:8px 15px 32px;background:none}
 }
+
+/* Pale-blue sections (.s-bg-pale): labels and grey text are tuned for white, so darken them here to keep 4.5:1. */
+.s-bg-pale .s-eyebrow{color:var(--brand-strong)}
+.s-bg-pale{--muted:var(--text)}
+
+/* Keyboard focus: a clear MVP blue ring on light backgrounds, white on dark and blue bands. */
+:focus-visible{outline:2px solid var(--brand);outline-offset:3px}
+:where(.s-bg-navy,.s-bg-blue,.s-editorial--dark,.s-pull--dark,.s-pull--blue,.s-photo,.s-narrative,.s-statement,.s-features--dark,.s-steps--dark,.s-cta,.s-logos--dark,.s-testimonial--dark) :focus-visible{outline-color:var(--on-dark)}
+
+/* Skip link: hidden until a keyboard user tabs to it, then jumps past the header to the page content. */
+.skip-link{position:absolute;left:16px;top:-60px;z-index:100;padding:10px 16px;border-radius:var(--radius-sm);background:var(--brand);color:var(--on-dark);font-weight:800}
+.skip-link:focus{top:12px}
+
+/* Visitors who ask their device for less motion: no hover lift. */
+@media(prefers-reduced-motion:reduce){.btn:hover{transform:none}}
