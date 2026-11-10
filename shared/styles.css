@@ -10,7 +10,7 @@
   --danger:#d83a3a;--hand:Caveat,cursive;
   /* Header and footer */
   --header-bg:rgba(255,255,255,.98);--header-line:rgba(216,231,241,.9);--menu-line:#dce8ef;--menu-hover:#f2f9fd;--menu-muted:#647b8e;
-  --shadow-menu:0 18px 42px rgba(7,57,99,.14);--shadow-menu-mobile:0 18px 32px rgba(8,46,80,.12);--footer-link:#2a4d69;--footer-muted:#758899;
+  --shadow-menu:0 18px 42px rgba(7,57,99,.14);--shadow-menu-mobile:0 18px 32px rgba(8,46,80,.12);--footer-link:#2a4d69;
   --fs-body:1rem;--fs-small:.875rem;--fs-label:.75rem;--radius:12px;--radius-sm:8px;
 }
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Manrope,Arial,sans-serif;color:var(--text);background:var(--white);font-size:16px;line-height:1.6}
@@ -26,7 +26,7 @@ h1,h2,h3{color:var(--navy);letter-spacing:-.035em}h2{font-size:clamp(2rem,3vw,2.
 .brand{display:inline-flex;align-items:center}.brand img{display:block;width:200px;height:auto}
 .primary-nav{display:flex;align-items:stretch;justify-content:center;gap:4px;height:82px}
 .nav-item{position:relative;display:flex;align-items:stretch}
-.nav-link{display:inline-flex;align-items:center;gap:7px;padding:0 13px;border:0;background:transparent;color:var(--navy);font:700 .82rem/1 Manrope,Arial,sans-serif;cursor:pointer;white-space:nowrap}
+.nav-link{display:inline-flex;align-items:center;gap:7px;padding:0 13px;border:0;background:transparent;color:var(--navy);font:700 .875rem/1 Manrope,Arial,sans-serif;cursor:pointer;white-space:nowrap}
 a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:var(--blue)}
 .nav-chevron{width:9px;height:6px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;transition:transform .2s ease}
 .nav-item:hover .nav-chevron,.nav-item:focus-within .nav-chevron,.nav-item.open .nav-chevron{transform:rotate(180deg)}
@@ -36,14 +36,14 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
 .dropdown-menu-right{left:auto;right:0;transform:translate(0,8px)}.nav-item:hover>.dropdown-menu-right,.nav-item:focus-within>.dropdown-menu-right,.nav-item.open>.dropdown-menu-right{transform:translate(0,0)}
 .dropdown-menu a{display:block;padding:11px 12px;border-radius:8px;color:var(--navy)}
 .dropdown-menu a:hover{background:var(--menu-hover)}
-.dropdown-menu strong,.dropdown-menu span{display:block}.dropdown-menu strong{font-size:.82rem;line-height:1.25}.dropdown-menu span{margin-top:3px;font-size:.72rem;line-height:1.4;font-weight:500;color:var(--menu-muted)}
+.dropdown-menu strong,.dropdown-menu span{display:block}.dropdown-menu strong{font-size:.875rem;line-height:1.25}.dropdown-menu span{margin-top:3px;font-size:.875rem;line-height:1.4;font-weight:500;color:var(--menu-muted)}
 .dropdown-label{margin:8px 12px 4px;padding-top:12px;border-top:1px solid var(--menu-line);font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--menu-muted)}
 .ext-icon{display:inline-block;width:.85em;height:.85em;margin-left:3px;vertical-align:-.08em;fill:currentColor}.s-link .ext-icon{margin-left:0}
-.nav-cta{padding-inline:22px;min-height:46px}.menu-toggle{display:none}
+.nav-cta{padding-inline:22px;min-height:46px;white-space:nowrap}.menu-toggle{display:none}
 
 .footer{padding:34px 0 20px}.footer-top{display:flex;justify-content:space-between;gap:30px;align-items:center;padding-bottom:22px;border-bottom:1px solid var(--line)}
-.footer-brand{display:flex;align-items:center;gap:22px}.footer-brand .brand{flex:0 0 auto}.footer-brand .brand img{width:180px}.footer-brand p{font-size:.78rem;max-width:360px;margin:0;color:var(--muted)}.footer nav{display:flex;flex-wrap:wrap;gap:16px}.footer nav a{font-size:.75rem;font-weight:700;color:var(--footer-link)}
-.footer-bottom{display:flex;justify-content:space-between;gap:20px;padding-top:14px;font-size:.7rem;color:var(--footer-muted)}.footer-bottom a{color:var(--footer-muted);margin-left:18px}
+.footer-brand{display:flex;align-items:center;gap:22px}.footer-brand .brand{flex:0 0 auto}.footer-brand .brand img{width:180px}.footer-brand p{font-size:.875rem;max-width:360px;margin:0;color:var(--muted)}.footer nav{display:flex;flex-wrap:wrap;gap:16px}.footer nav a{font-size:.875rem;font-weight:700;color:var(--footer-link)}
+.footer-bottom{display:flex;justify-content:space-between;gap:20px;padding-top:14px;font-size:.75rem;color:var(--muted)}.footer-bottom a{color:var(--muted);margin-left:18px}
 
 @media(max-width:1060px){
   .nav-wrap{grid-template-columns:1fr auto auto;min-height:74px}
@@ -58,8 +58,8 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
   .nav-item.open>.dropdown-menu{display:block;transform:none}
   .dropdown-menu:before{display:none}
   .dropdown-menu a{padding:10px 12px}
-  .dropdown-menu strong{font-size:.82rem}.dropdown-menu span{font-size:.72rem}
-  .nav-cta{min-height:42px;padding:10px 16px;font-size:.82rem}
+  .dropdown-menu strong{font-size:.875rem}.dropdown-menu span{font-size:.875rem}
+  .nav-cta{min-height:42px;padding:10px 16px;font-size:.875rem}
   
   
   
@@ -74,11 +74,20 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
   
   
   
-  .footer-top{flex-direction:column;align-items:flex-start}.footer-bottom{flex-direction:column}
+  .footer-top{flex-direction:column;align-items:flex-start}.footer-bottom{flex-direction:column}.footer-brand{flex-direction:column;align-items:flex-start;gap:12px}.footer-bottom div a:first-child{margin-left:0}
 }
 @media(max-width:520px){
   .nav-cta{display:none}.nav-wrap{grid-template-columns:1fr auto}
+  /* Compact Leak Report button stays visible on phones (MVP header only, marked .nav-cta--compact) */
+  .nav-cta--compact{display:inline-flex;min-height:44px;padding:10px 14px}.nav-cta--compact .nav-cta__long,.nav-cta--compact .nav-cta__arrow{display:none}
+  .nav-wrap:has(.nav-cta--compact){grid-template-columns:1fr auto auto;gap:10px}.nav-wrap:has(.nav-cta--compact) .brand img{width:124px}
   
+}
+
+/* Touch screens: every link and the menu button get at least a 44px tap area. Mouse users see no change. */
+@media(pointer:coarse){
+  .s-link,.footer nav a,.footer-bottom a,.brand{min-height:44px;display:inline-flex;align-items:center}
+  .menu-toggle{width:44px;height:44px}
 }
 
 /* ==========================================================================
@@ -218,7 +227,7 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
 .s-steps__marker{position:relative;z-index:1;display:grid;place-items:center;width:44px;height:44px;margin:0 auto 12px;border-radius:50%;background:var(--brand);color:var(--on-dark);font-weight:800}
 .s-steps__marker svg{width:22px;height:22px;fill:currentColor}
 .s-steps__item strong{display:block;font-size:var(--fs-body);line-height:1.3;color:var(--ink)}
-.s-steps__item p{margin:4px 0 0;font-size:var(--fs-small);line-height:1.45;color:var(--muted)}
+.s-steps__item p{margin:4px 0 0;font-size:var(--fs-body);line-height:1.5;color:var(--text)}
 .s-steps--dots .s-steps__marker{width:18px;height:18px;margin-bottom:14px;border:4px solid var(--brand-soft);box-sizing:content-box}
 .s-steps--dots .s-steps__item:not(:last-child):after{top:12px;left:calc(50% + 15px);width:calc(100% - 14px)}
 .s-steps--boxed .s-steps__list{gap:36px}
@@ -408,9 +417,9 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
 .s-cta{padding:44px 0;background:linear-gradient(95deg,var(--band),var(--brand));color:var(--on-dark)}
 .s-cta__grid{display:flex;justify-content:space-between;align-items:center;gap:36px}
 .s-cta h2{margin:0 0 6px;font-size:clamp(1.5rem,2.4vw,2rem);line-height:1.2;color:var(--on-dark)}
-.s-cta p{margin:0;font-size:var(--fs-body);color:var(--on-dark-muted)}
+.s-cta p{margin:0;font-size:var(--fs-body);color:var(--on-dark)}
 .s-cta__action{display:flex;flex:0 0 auto;flex-direction:column;align-items:center;gap:8px}
-.s-cta__action>span{font-size:var(--fs-small);color:var(--on-dark-muted)}
+.s-cta__action>span{font-size:var(--fs-small);color:var(--on-dark)}
 
 /* Section library: responsive */
 @media(max-width:1060px){
