@@ -1,0 +1,501 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-10T18:25:14.300Z",
+  "title": "Design System: MVP Team Pro",
+  "extensions": {
+    "colorMeta": {
+      "mvp-blue": {
+        "role": "primary",
+        "displayName": "MVP Blue",
+        "canonical": "#0063fb",
+        "cssVar": "--brand",
+        "tonalRamp": [
+          "#001e4b",
+          "#00327e",
+          "#0045b0",
+          "#0057dd",
+          "#0063fb",
+          "#599afc",
+          "#a6c8fe",
+          "#e0ecff"
+        ]
+      },
+      "mvp-blue-strong": {
+        "role": "primary",
+        "displayName": "MVP Blue Strong",
+        "canonical": "#004ecc",
+        "cssVar": "--brand-strong",
+        "tonalRamp": [
+          "#00173d",
+          "#002766",
+          "#00378f",
+          "#0045b4",
+          "#004ecc",
+          "#598cde",
+          "#a6c1ed",
+          "#e0eaf9"
+        ]
+      },
+      "mvp-blue-line": {
+        "role": "primary",
+        "displayName": "MVP Blue Line",
+        "canonical": "#9fc3fd",
+        "cssVar": "--brand-line",
+        "tonalRamp": [
+          "#303b4c",
+          "#50627f",
+          "#6f89b1",
+          "#8cacdf",
+          "#9fc3fd",
+          "#c1d8fe",
+          "#ddeafe",
+          "#f3f8ff"
+        ]
+      },
+      "mvp-blue-soft": {
+        "role": "neutral",
+        "displayName": "MVP Blue Soft",
+        "canonical": "#e8f1ff",
+        "cssVar": "--brand-soft",
+        "tonalRamp": [
+          "#46484d",
+          "#747980",
+          "#a2a9b3",
+          "#ccd4e0",
+          "#e8f1ff",
+          "#f0f6ff",
+          "#f7faff",
+          "#fcfdff"
+        ]
+      },
+      "mvp-blue-tint": {
+        "role": "neutral",
+        "displayName": "MVP Blue Tint",
+        "canonical": "#f4f8ff",
+        "cssVar": "--brand-tint",
+        "tonalRamp": [
+          "#494a4d",
+          "#7a7c80",
+          "#abaeb3",
+          "#d7dae0",
+          "#f4f8ff",
+          "#f8faff",
+          "#fbfdff",
+          "#fefeff"
+        ]
+      },
+      "accent-light": {
+        "role": "secondary",
+        "displayName": "Accent Light",
+        "canonical": "#6cc2ff",
+        "cssVar": "--accent-light",
+        "tonalRamp": [
+          "#203a4d",
+          "#366180",
+          "#4c88b3",
+          "#5fabe0",
+          "#6cc2ff",
+          "#9fd7ff",
+          "#cceaff",
+          "#edf8ff"
+        ]
+      },
+      "deep-navy": {
+        "role": "secondary",
+        "displayName": "Deep Navy",
+        "canonical": "#062a5e",
+        "cssVar": "--band",
+        "tonalRamp": [
+          "#020d1c",
+          "#03152f",
+          "#041d42",
+          "#052553",
+          "#062a5e",
+          "#5d7596",
+          "#a8b4c7",
+          "#e1e5ec"
+        ]
+      },
+      "deep-navy-2": {
+        "role": "secondary",
+        "displayName": "Deep Navy 2",
+        "canonical": "#0a4396",
+        "cssVar": "--band-2",
+        "tonalRamp": [
+          "#03142d",
+          "#05224b",
+          "#072f69",
+          "#093b84",
+          "#0a4396",
+          "#6085bb",
+          "#a9bdda",
+          "#e2e8f2"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#0b2a5c",
+        "cssVar": "--ink",
+        "tonalRamp": [
+          "#030d1c",
+          "#06152e",
+          "#081d40",
+          "#0a2551",
+          "#0b2a5c",
+          "#607595",
+          "#aab4c6",
+          "#e2e5eb"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Text",
+        "canonical": "#173b5d",
+        "cssVar": "--text",
+        "tonalRamp": [
+          "#07121c",
+          "#0c1e2f",
+          "#102941",
+          "#143452",
+          "#173b5d",
+          "#688096",
+          "#aebac6",
+          "#e3e7ec"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "canonical": "#5c7287",
+        "cssVar": "--muted",
+        "tonalRamp": [
+          "#1c2229",
+          "#2e3944",
+          "#40505f",
+          "#516477",
+          "#5c7287",
+          "#95a3b1",
+          "#c6ced5",
+          "#ebeef1"
+        ]
+      },
+      "surface-soft": {
+        "role": "neutral",
+        "displayName": "Surface Soft",
+        "canonical": "#f3f8fd",
+        "cssVar": "--surface-soft",
+        "tonalRamp": [
+          "#494a4c",
+          "#7a7c7f",
+          "#aaaeb1",
+          "#d6dadf",
+          "#f3f8fd",
+          "#f7fafe",
+          "#fbfdfe",
+          "#fefeff"
+        ]
+      },
+      "card-line": {
+        "role": "neutral",
+        "displayName": "Card Line",
+        "canonical": "#dbe6f2",
+        "cssVar": "--card-line",
+        "tonalRamp": [
+          "#424549",
+          "#6e7379",
+          "#99a1a9",
+          "#c1cad5",
+          "#dbe6f2",
+          "#e8eff7",
+          "#f2f6fa",
+          "#fbfcfd"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "#ffffff",
+        "cssVar": "--white",
+        "tonalRamp": [
+          "#4d4d4d",
+          "#808080",
+          "#b3b3b3",
+          "#e0e0e0",
+          "#ffffff",
+          "#ffffff",
+          "#ffffff",
+          "#ffffff"
+        ]
+      },
+      "on-dark-muted": {
+        "role": "neutral",
+        "displayName": "On-Dark Muted",
+        "canonical": "#cbdaf0",
+        "cssVar": "--on-dark-muted",
+        "tonalRamp": [
+          "#3d4148",
+          "#666d78",
+          "#8e99a8",
+          "#b3c0d3",
+          "#cbdaf0",
+          "#dde7f5",
+          "#edf2fa",
+          "#f9fbfd"
+        ]
+      },
+      "danger": {
+        "role": "neutral",
+        "displayName": "Danger",
+        "canonical": "#d83a3a",
+        "cssVar": "--danger",
+        "tonalRamp": [
+          "#411111",
+          "#6c1d1d",
+          "#972929",
+          "#be3333",
+          "#d83a3a",
+          "#e67f7f",
+          "#f1baba",
+          "#fae7e7"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero H1 only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles."
+      },
+      "statement": {
+        "displayName": "Statement",
+        "purpose": "Pull and editorial statements."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Card and feature headings."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Paragraph under a section title, hero text."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All reading text."
+      },
+      "secondary": {
+        "displayName": "Secondary",
+        "purpose": "Captions, stat labels, text links."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase eyebrows."
+      },
+      "hand-note": {
+        "displayName": "Hand note",
+        "purpose": "Optional handwritten margin note."
+      }
+    },
+    "shadows": [
+      {
+        "name": "card",
+        "value": "0 8px 24px rgba(11,42,92,.06)",
+        "purpose": "Resting cards, stat tiles, hero tags."
+      },
+      {
+        "name": "lift",
+        "value": "0 18px 40px rgba(11,42,92,.14)",
+        "purpose": "Overlays on photos, hero video frame."
+      },
+      {
+        "name": "brand",
+        "value": "0 10px 24px rgba(0,99,251,.20)",
+        "purpose": "Glow under the primary button only."
+      },
+      {
+        "name": "menu",
+        "value": "0 18px 42px rgba(7,57,99,.14)",
+        "purpose": "Dropdown menus."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-standard",
+        "value": "0.2s ease",
+        "purpose": "Button lift and color, chevron rotation."
+      },
+      {
+        "name": "menu-fade",
+        "value": "0.18s ease",
+        "purpose": "Dropdown fade and 8px slide."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "header-collapse",
+        "value": "1060px"
+      },
+      {
+        "name": "grid-step",
+        "value": "900px"
+      },
+      {
+        "name": "tablet",
+        "value": "780px"
+      },
+      {
+        "name": "phone",
+        "value": "520px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main action on every page, usually the Leak Report.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Get Your Free Leak Report &rarr;</a>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;gap:.55rem;padding:14px 22px;border-radius:8px;font:800 .94rem/1.2 Manrope,Arial,sans-serif;text-decoration:none;background:var(--brand,#0063fb);color:#fff;box-shadow:var(--shadow-brand,0 10px 24px rgba(0,99,251,.20));transition:transform .2s ease,background .2s ease}.ds-btn-primary:hover{background:var(--brand-strong,#004ecc);transform:translateY(-1px)}.ds-btn-primary:focus-visible{outline:2px solid var(--brand,#0063fb);outline-offset:3px}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Outline button beside a primary.",
+      "html": "<a class=\"ds-btn-secondary\" href=\"#\">See the Process</a>",
+      "css": ".ds-btn-secondary{display:inline-flex;align-items:center;gap:.55rem;padding:14px 22px;border-radius:8px;font:800 .94rem/1.2 Manrope,Arial,sans-serif;text-decoration:none;background:#fff;color:var(--brand,#0063fb);border:1px solid var(--brand-line,#9fc3fd);transition:transform .2s ease}.ds-btn-secondary:hover{transform:translateY(-1px)}.ds-btn-secondary:focus-visible{outline:2px solid var(--brand,#0063fb);outline-offset:3px}"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Library card grid item: heading, text, link.",
+      "html": "<div class=\"ds-card\"><h3>Customer Reactivation</h3><p>Our callers reach your past customers with five touches across calls, email and mail.</p><a href=\"#\">See 5x5 Outreach &rarr;</a></div>",
+      "css": ".ds-card{max-width:340px;padding:24px;border:1px solid var(--card-line,#dbe6f2);border-radius:12px;background:#fff;box-shadow:var(--shadow-card,0 8px 24px rgba(11,42,92,.06));font-family:Manrope,Arial,sans-serif;color:var(--text,#173b5d)}.ds-card h3{margin:0 0 8px;font-size:1.125rem;line-height:1.25;color:var(--ink,#0b2a5c)}.ds-card p{margin:0 0 12px;font-size:1rem;line-height:1.6}.ds-card a{font-size:.875rem;font-weight:800;color:var(--brand,#0063fb);text-decoration:none}"
+    },
+    {
+      "name": "Stat Tile",
+      "kind": "card",
+      "refersTo": "stat-tile",
+      "description": "One approved number with its label.",
+      "html": "<div class=\"ds-stat\"><strong>[STAT NEEDED]</strong><span>What the number measures</span></div>",
+      "css": ".ds-stat{display:inline-block;padding:16px;border:1px solid var(--card-line,#dbe6f2);border-radius:12px;background:#fff;box-shadow:var(--shadow-card,0 8px 24px rgba(11,42,92,.06));font-family:Manrope,Arial,sans-serif}.ds-stat strong{display:block;font-size:1.5rem;line-height:1.1;letter-spacing:-.02em;color:var(--ink,#0b2a5c)}.ds-stat span{display:block;font-size:.875rem;color:var(--muted,#5c7287)}"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Booking form field.",
+      "html": "<label class=\"ds-field\">Company name<input placeholder=\"Your company\"></label>",
+      "css": ".ds-field{display:grid;gap:6px;font:700 .875rem Manrope,Arial,sans-serif;color:var(--ink,#0b2a5c)}.ds-field input{width:280px;padding:12px 14px;border:1px solid var(--card-line,#dbe6f2);border-radius:8px;background:#fff;font:400 1rem Manrope,Arial,sans-serif;color:var(--text,#173b5d)}.ds-field input:focus-visible{outline:2px solid var(--brand,#0063fb);outline-offset:1px}"
+    },
+    {
+      "name": "Eyebrow and Title",
+      "kind": "custom",
+      "refersTo": "label",
+      "description": "Section head: uppercase blue eyebrow over a heavy headline.",
+      "html": "<div class=\"ds-head\"><p>How It Works</p><h2>You Decide. We Do the Rest.</h2></div>",
+      "css": ".ds-head{font-family:Manrope,Arial,sans-serif}.ds-head p{margin:0 0 8px;font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--brand,#0063fb)}.ds-head h2{margin:0;font-size:2.1rem;line-height:1.12;letter-spacing:-.03em;color:var(--ink,#0b2a5c)}"
+    },
+    {
+      "name": "FAQ Item",
+      "kind": "custom",
+      "refersTo": "faq-item",
+      "description": "Accordion question with a plus that becomes a minus.",
+      "html": "<details class=\"ds-faq\"><summary>What does it cost?</summary><p>Answer text in muted body type.</p></details>",
+      "css": ".ds-faq{max-width:460px;padding:0 18px;border:1px solid var(--card-line,#dbe6f2);border-radius:8px;background:#fff;font-family:Manrope,Arial,sans-serif}.ds-faq summary{display:flex;justify-content:space-between;padding:14px 0;list-style:none;cursor:pointer;font-weight:700;color:var(--ink,#0b2a5c)}.ds-faq summary::-webkit-details-marker{display:none}.ds-faq summary:after{content:\"+\";color:var(--brand,#0063fb);font-size:1.375rem;line-height:1}.ds-faq[open] summary:after{content:\"\\2212\"}.ds-faq p{margin:0;padding:0 0 16px;color:var(--muted,#5c7287)}"
+    },
+    {
+      "name": "CTA Band",
+      "kind": "custom",
+      "refersTo": "cta-band",
+      "description": "The navy-to-blue closing band on every page.",
+      "html": "<div class=\"ds-cta\"><div><h2>Find Out What They Find.</h2><p>Get the free Leak Report, delivered within 24 hours.</p></div><a href=\"#\">Get Your Free Leak Report</a></div>",
+      "css": ".ds-cta{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:44px 32px;background:linear-gradient(95deg,var(--band,#062a5e),var(--brand,#0063fb));color:#fff;font-family:Manrope,Arial,sans-serif}.ds-cta h2{margin:0 0 6px;font-size:1.75rem;line-height:1.2;color:#fff}.ds-cta p{margin:0;color:var(--on-dark-muted,#cbdaf0)}.ds-cta a{padding:14px 22px;border-radius:8px;background:#fff;color:var(--navy,#073963);font-weight:800;text-decoration:none;white-space:nowrap;transition:transform .2s ease}.ds-cta a:hover{transform:translateY(-1px)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Operator's Briefing",
+    "overview": "The site reads like a capable operations manager walking an owner through what got done: plain claims, real numbers, a clear next step. Confidence comes from structure and proof, not decoration. Headlines are heavy and tightly tracked, body copy is roomy and easy to read, and every page alternates calm white reading sections with deep navy and MVP blue bands that mark the moments that matter.\n\nThe system is calm and trustworthy rather than loud. Shadows are soft and blue-tinted, corners are gently rounded, and hover states move a single pixel. The one human touch is the handwritten Caveat note, used sparingly, like a manager's margin comment on a report.\n\nEverything is assembled from a fixed library of 25 approved section types (`shared/library/SECTIONS.md`, live reference in `shared/library/components.html`). New visual ideas enter the library first, with approval, and only then appear on a page.",
+    "keyCharacteristics": [
+      "White, navy and MVP blue only, with pale blue as a quiet accent.",
+      "Heavy Manrope headlines with tight negative tracking; generous 1.6 body leading.",
+      "High-contrast bands set the page rhythm: never more than two light sections in a row.",
+      "Soft blue-tinted shadows and 8px or 12px corners; nothing sharp, nothing bubbly.",
+      "Proof-first: stat tiles, checklists and comparison tables carry the argument.",
+      "One optional handwritten note per moment, never as body text."
+    ],
+    "rules": [
+      {
+        "name": "The Variables Only Rule",
+        "body": "Every color comes from a `:root` variable in `shared/styles.css`. A typed-in hex value in a page or section style is a bug.",
+        "section": "colors"
+      },
+      {
+        "name": "The No New Colors Rule",
+        "body": "Navy, MVP blue, white and light blue are the whole palette. Danger red exists only for cross marks.",
+        "section": "colors"
+      },
+      {
+        "name": "The Pale Is an Accent Rule",
+        "body": "Pale blue backgrounds sit between white sections for relief. They are never the default page background.",
+        "section": "colors"
+      },
+      {
+        "name": "The 16/14/12 Rule",
+        "body": "Body text is at least 16px, secondary text at least 14px, and only labels, eyebrows and fine print go down to 12px. Nothing smaller, ever.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Voice, One Note Rule",
+        "body": "Caveat is never used for body copy, headings or buttons. One handwritten note per section at most.",
+        "section": "typography"
+      },
+      {
+        "name": "The Two Light Sections Rule",
+        "body": "Never more than two light sections (white, pale blue, soft) in a row.",
+        "section": "layout"
+      },
+      {
+        "name": "The Three Breaks Rule",
+        "body": "Every long landing page has at least three high-contrast breaks (navy, MVP blue, dark split, photo-led or dark band) before the final CTA. The hero does not count.",
+        "section": "layout"
+      },
+      {
+        "name": "The Soft Lift Rule",
+        "body": "Shadows are tinted navy or blue, never pure black, and never sharper than the card shadow at rest.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Flat Bands Rule",
+        "body": "On navy and MVP blue sections, prefer white type, simple rules and icons over white cards. Depth on dark comes from contrast, not shadow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do build every page from the 25 library section types, copying markup and class names from `shared/library/components.html`.",
+      "Do take every color from the `:root` variables in `shared/styles.css`.",
+      "Do keep body text at 16px or more, secondary at 14px or more, and only labels at 12px.",
+      "Do alternate light and dark: at most two light sections in a row, and at least three high-contrast breaks before the final CTA.",
+      "Do use solid Heroicons as inline SVG for icons, in MVP Blue on light and white on dark.",
+      "Do use the logo image in the header and footer.",
+      "Do end every page with the CTA band."
+    ],
+    "donts": [
+      "Don't type a hex color into a page or section style, or introduce any color outside navy, MVP blue, white and light blue.",
+      "Don't add new CSS unless a new section type has been approved and added to the library first.",
+      "Don't recreate the logo as text.",
+      "Don't use pale blue as the default background.",
+      "Don't put white cards on navy or MVP blue bands unless they are genuinely needed.",
+      "Don't turn every list or idea into a card; consider typography, a rail, a split, a list or a pull statement first.",
+      "Don't use numbered steps (Step 1, 01 / 02) in the composition patterns 19 to 25.",
+      "Don't use photos of handshakes, headsets or posed sales teams; use candid conversation between professionals.",
+      "Don't use Caveat for anything but an occasional handwritten note.",
+      "Don't use em dashes in any text."
+    ]
+  }
+}

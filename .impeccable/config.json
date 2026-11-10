@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "mvpteampro/src/index.html"
+        ],
+        "createdAt": "2026-11-10T18:39:21.226Z",
+        "reason": "Claude: source page has only include comments and no stylesheet resolved, so every role reads 16px; the built page renders the hero at up to 3.9rem and section titles at up to 2.35rem over 16px body (verified in browser and in the critique's detector run)"
+      }
+    ]
+  }
+}
