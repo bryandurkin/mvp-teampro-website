@@ -324,7 +324,7 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
 .s-split--founder .s-split__grid{grid-template-columns:minmax(0,.55fr) minmax(0,1.45fr)}
 .s-split--founder .s-split__media img{aspect-ratio:4/5}
 .s-split__quote{margin:18px 0 0;padding-left:18px;border-left:3px solid var(--brand);font-size:1.25rem;font-weight:700;line-height:1.5;color:var(--ink)}
-.s-split__signature{margin:16px 0 0;font-family:var(--hand);font-size:2.25rem;line-height:1;color:var(--brand)}
+.s-split__body p.s-split__signature{margin:16px 0 0;font-family:var(--hand);font-size:2.25rem;line-height:1;color:var(--brand)}
 .s-split__name{margin-top:6px;font-size:var(--fs-small);color:var(--muted)}
 .s-split__name strong{display:block;font-size:var(--fs-body);color:var(--ink)}
 
