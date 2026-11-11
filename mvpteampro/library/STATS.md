@@ -3,7 +3,7 @@
 Only numbers listed here may appear on the site.
 Add a row only when the number has a source. If a page needs a number that is not here, use [STAT NEEDED].
 
-Client names never appear on the site or in this file. This repo is public, so describe each client by industry only. The 2026 client source reports (which do name the clients) are PDFs in the Google Drive folder "2026 Case Study - Client Stats".
+Client names never appear on the site or in this file, except where a row below says the client may be named (approved by Bryan for that use only). This repo is public, so otherwise describe each client by industry only. The 2026 client source reports (which do name the clients) are PDFs in the Google Drive folder "2026 Case Study - Client Stats".
 
 When a row includes wording in quotes, use that wording or keep its qualifier. A "+" means the number is a minimum, because some weeks did not log that metric.
 
@@ -99,3 +99,10 @@ In industrial B2B, getting past the gatekeeper to the right person is the hardes
 | 15 years | How long MVP Team Pro has been running this process ("15 years running this process") | Not a client result: MVP Team Pro's own track record | 15 years to present | Not applicable | Bryan Durkin, internal data, Nov 2026 |
 | About 20% | Contacts we call in industrial accounts who have changed jobs since the client last spoke to them ("About 20% of the contacts we call in industrial accounts have changed jobs since the client last spoke to them"). Always keep "About" and say it is our own call data | Industrial accounts, our own call data (not one client's result) | Not specified | No | Bryan Durkin, internal data, Nov 2026 |
 | About half | Share of our team who are callers and share who create and publish content ("About half our team are callers and half create and publish content") | Not a client result: how our own team is made up | Nov 2026 | Not applicable | Bryan Durkin, internal data, Nov 2026 |
+
+## Authority Hub proof (approved by Bryan, 2026-11-11)
+
+| Number | What it measures | Client or "all clients" | Time period | Can we name the client (yes/no) | Source |
+|---|---|---|---|---|---|
+| First name given | Google AI Mode lists Vance Morris first for the search "small business Disney consultant" | Vance Morris (Authority Hub client) | November 2026 | Yes, on the Authority Hub page proof section only | Screenshot mvpteampro/assets/photos/proof_vance_morris_ai_mode.png |
+| 55 episodes | Episodes of MVP's own podcast, run on the Authority Hub system and team | Not a client result: MVP's own podcast | As of November 2026 | Not applicable | Supplied by Bryan Durkin for the Authority Hub page |
