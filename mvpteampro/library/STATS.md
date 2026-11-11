@@ -96,7 +96,7 @@ In industrial B2B, getting past the gatekeeper to the right person is the hardes
 
 | Number | What it measures | Client or "all clients" | Time period | Can we name the client (yes/no) | Source |
 |---|---|---|---|---|---|
-| 15 years | How long MVP Team Pro has been running this process ("15 years running this process") | Not a client result: MVP Team Pro's own track record | 15 years to present | Not applicable | Bryan Durkin, internal data, Nov 2026 |
+| Since 2004 | How long MVP Team Pro has been running this business ("Since 2004, running this business") | Not a client result: MVP Team Pro's own track record | 2004 to present | Not applicable | Bryan Durkin, internal data, Nov 2026; updated to "Since 2004" by Bryan, 2026-11-11 |
 | About 20% | Contacts we call in industrial accounts who have changed jobs since the client last spoke to them ("About 20% of the contacts we call in industrial accounts have changed jobs since the client last spoke to them"). Always keep "About" and say it is our own call data | Industrial accounts, our own call data (not one client's result) | Not specified | No | Bryan Durkin, internal data, Nov 2026 |
 | About half | Share of our team who are callers and share who create and publish content ("About half our team are callers and half create and publish content") | Not a client result: how our own team is made up | Nov 2026 | Not applicable | Bryan Durkin, internal data, Nov 2026 |
 
