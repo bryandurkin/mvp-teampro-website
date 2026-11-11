@@ -20,6 +20,7 @@ approved by Bryan, and only then used on a page.
    Portrait option (.s-hero__media--portrait on .s-hero__media): anchors the photo crop near the top so a person's face sits in the same place on every page. Use the full-size photo (home_hero_bryan.jpg), not the small founder_portrait.webp.
    Left-anchored option (.s-hero__media--left): keeps people on the left side of a wide photo in frame.
    Video option (1F, .s-hero__media--video): a 16:9 slot in place of the photo. A still poster image in brand colors (assets/photos/video_poster.svg) with a play icon (.s-hero__play), and an italic caption under it (.s-hero__caption). An optional line under the button (.s-hero__reassure) holds a short reassurance. When the video is ready, make .s-hero__play a link to the video (or swap in the player) and keep the poster as its cover.
+   Text-only option (1G, .s-hero--text on .s-hero, no .s-hero__media): one full-width column on a white background, for pages that have no approved photo yet. Keep the copy short so the hero does not feel empty. When a photo is approved, remove .s-hero--text and add the .s-hero__media block back.
    Optional extras: eyebrow label, large subheadline under the headline, overlay card on the image (checklist, quote, or stat list), handwritten note, detail list (Industry / Focus / Channels, as on the case study), service tags over the photo (Plumbing / HVAC / Electrical / Exterior, as on Home Services).
    Mockups: every page.
 
