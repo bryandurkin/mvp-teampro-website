@@ -30,7 +30,7 @@ In order of strength, the claims a competitor cannot truthfully copy:
 
 1. **One team does both.** The same team follows up with customers and publishes the client's expertise. Every call ends with the buyer looking the company up, so there has to be something worth finding ("Every call ends with a search").
 2. **Managed, not freelancers.** A dedicated team trained on the client's business, managed for quality, with backup coverage, working inside the client's own CRM and tools, with regular reporting.
-3. **Bryan Durkin's track record.** He has built remote teams since 1997, grew an operation from 1,500 to 300,000+ transactions a day, and MVP Team Pro has run this process for 15 years.
+3. **Bryan Durkin's track record.** He has built remote teams since 1997, grew an operation from 1,500 to 300,000+ transactions a day, and MVP Team Pro has been running this business since 2004.
 
 ## Operating Context
 
