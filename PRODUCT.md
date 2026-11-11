@@ -35,7 +35,7 @@ In order of strength, the claims a competitor cannot truthfully copy:
 ## Operating Context
 
 - **Offers:** 5x5 Outreach (five touches across calls, email and mail), Authority Hub (content: blogs, newsletters, short videos, posted and sent for the client), and the Full System (both together).
-- **Front-door offer:** the free AI Visibility Leak Report. It shows what Google and AI answer engines say about the company, who they name instead, and whether AI can read the website. It is delivered by email within 24 hours and checked by a real person. Every Leak Report button uses `LEAK_REPORT_URL` in `shared/config.json`.
+- **Front-door offer:** the free AI Visibility Leak Report. It shows what Google and AI answer engines say about the company, who they name instead, and whether AI can read the website. It is delivered by email within 2 to 3 business days and checked by a real person. Every Leak Report button uses `LEAK_REPORT_URL` in `shared/config.json`.
 - **Engagement flow:** fit call, then setup (the tech lead connects to the CRM, email and website), then the team runs the work, then a monthly report.
 - **Coverage models:** 5x8, 5x12 and 7x24.
 - **Client systems:** the team works inside GoHighLevel, HubSpot, Jobber, ServiceMonster and most other CRMs.
