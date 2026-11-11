@@ -414,7 +414,7 @@
       "kind": "custom",
       "refersTo": "cta-band",
       "description": "The navy-to-blue closing band on every page.",
-      "html": "<div class=\"ds-cta\"><div><h2>Find Out What They Find.</h2><p>Get the free Leak Report, delivered within 24 hours.</p></div><a href=\"#\">Get Your Free Leak Report</a></div>",
+      "html": "<div class=\"ds-cta\"><div><h2>Find Out What They Find.</h2><p>Get the free Leak Report, delivered within 2 to 3 business days.</p></div><a href=\"#\">Get Your Free Leak Report</a></div>",
       "css": ".ds-cta{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:44px 32px;background:linear-gradient(95deg,var(--band,#062a5e),var(--brand,#0063fb));color:#fff;font-family:Manrope,Arial,sans-serif}.ds-cta h2{margin:0 0 6px;font-size:1.75rem;line-height:1.2;color:#fff}.ds-cta p{margin:0;color:var(--on-dark-muted,#cbdaf0)}.ds-cta a{padding:14px 22px;border-radius:8px;background:#fff;color:var(--navy,#073963);font-weight:800;text-decoration:none;white-space:nowrap;transition:transform .2s ease}.ds-cta a:hover{transform:translateY(-1px)}"
     }
   ],
