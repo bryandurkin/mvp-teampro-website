@@ -11,6 +11,15 @@
         ],
         "createdAt": "2026-11-10T18:39:21.226Z",
         "reason": "Claude: source page has only include comments and no stylesheet resolved, so every role reads 16px; the built page renders the hero at up to 3.9rem and section titles at up to 2.35rem over 16px body (verified in browser and in the critique's detector run)"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "mvpteampro/src/authority-hub.html"
+        ],
+        "createdAt": "2026-11-11T20:14:24.453Z",
+        "reason": "Claude: page uses the shared type scale in shared/styles.css (hero h1 up to 3.9rem, section titles up to 2.35rem, body 16px), steps well above 1.25x; hook scanned the page without the shared stylesheet"
       }
     ]
   }
