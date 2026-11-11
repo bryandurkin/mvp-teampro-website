@@ -216,7 +216,7 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
 .s-features--dark{background:linear-gradient(110deg,var(--band),var(--band-2));color:var(--on-dark)}
 .s-features--dark .s-title,.s-features--dark .s-features__item h3{color:var(--on-dark)}
 .s-features--dark .s-eyebrow{color:var(--accent-light)}
-.s-features--dark .s-features__item p{color:var(--on-dark-muted)}
+.s-features--dark .s-features__item p,.s-features--dark .s-lead{color:var(--on-dark-muted)}
 .s-features--dark .s-features__item+.s-features__item{border-left-color:var(--on-dark-line)}
 .s-features--dark .s-icon,.s-features--dark .s-link{color:var(--accent-light)}
 
@@ -431,7 +431,7 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
   .s-features--4col .s-features__item:nth-child(3){border-left:0;padding-left:0}
   .s-steps__grid,.s-compare__layout,.s-logos__grid,.s-booking__grid{grid-template-columns:1fr}
   .s-stats__grid{grid-template-columns:repeat(3,1fr)}
-  .s-statement--donut .s-statement__grid{grid-template-columns:auto 1fr}.s-statement--donut .s-statement__col:last-child{grid-column:1/-1;margin-top:28px;padding-left:0;border-left:0}
+  .s-statement--donut .s-statement__grid{grid-auto-flow:row;grid-template-columns:auto 1fr}.s-statement--donut .s-statement__col:last-child{grid-column:1/-1;margin-top:28px;padding-left:0;border-left:0}
   .s-results--featured .s-results__grid{grid-template-columns:1fr 1fr}.s-results--featured .s-results__tiles{grid-column:1/-1}
   .s-testimonial__band{grid-template-columns:160px minmax(0,1fr)}.s-testimonial__band>img{width:160px}.s-testimonial__aside{grid-column:1/-1;max-width:none;border-left:0;border-top:1px solid var(--card-line)}
   .s-testimonial__grid{grid-template-columns:1fr}
