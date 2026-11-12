@@ -58,7 +58,7 @@ Each row is one client's result unless the row says it covers several clients. N
 
 | Number | What it measures | Client or "all clients" | Time period | Can we name the client (yes/no) | Source |
 |---|---|---|---|---|---|
-| 142 | Appointments booked with referral partners: insurance agencies, adjusters, restoration companies and property managers | Restoration franchise group (home services) | May 2024 to Sep 2025 | No | Case study folder: restoration franchise referral partner report |
+| 142 | Appointments booked with referral partners: insurance agencies, adjusters, restoration companies and property managers, for 6 locations | Restoration franchise group (home services) | A 12-month period (corrected by Bryan, 2026-11-12) | No | Case study folder: restoration franchise referral partner report |
 | 4,676 | Referral partner prospects worked in one program | Restoration franchise group (home services) | May 2024 to Sep 2025 | No | Case study folder: restoration franchise referral partner report |
 | 17 | Markets covered in that program | Restoration franchise group (home services) | May 2024 to Sep 2025 | No | Case study folder: restoration franchise referral partner report |
 | 12,285 | Calls made in three call rounds, with a postcard and an email between rounds | Restoration franchise group (home services) | May 2024 to Sep 2025 | No | Case study folder: restoration franchise referral partner report |
