@@ -55,7 +55,7 @@ approved by Bryan, and only then used on a page.
 
 8. Results
    Layouts: three photo cards with a big number each; or photo plus quote plus 4 stat tiles (featured result).
-   Options: numbers-first (8A with .s-results--numbers: the number moves off the photo and becomes the card headline in large blue type, with a shorter photo; use <strong class="s-results__stat">, and wrap a comparison like "vs 11%" in <small>). Used on the homepage.
+   Options: numbers-first (8A with .s-results--numbers: the number moves off the photo and becomes the card headline in large blue type, with a shorter photo; use <strong class="s-results__stat">, and wrap a comparison like "vs 11%" in <small>). Used on the homepage and How It Works.
 
 9. Stat grid
    Rows of big numbers with icon and label. 4 to 10 tiles.
