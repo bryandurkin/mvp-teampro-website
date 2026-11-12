@@ -20,6 +20,15 @@
         ],
         "createdAt": "2026-11-11T20:14:24.453Z",
         "reason": "Claude: page uses the shared type scale in shared/styles.css (hero h1 up to 3.9rem, section titles up to 2.35rem, body 16px), steps well above 1.25x; hook scanned the page without the shared stylesheet"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "mvpteampro/src/*.html"
+        ],
+        "createdAt": "2026-11-12T00:45:42.793Z",
+        "reason": "Claude: source pages load styles.css through the <!-- include: head --> partial, so the unbuilt file has no stylesheet; the built page in dist/site does not raise this rule"
       }
     ]
   }
