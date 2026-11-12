@@ -20,6 +20,7 @@ approved by Bryan, and only then used on a page.
    Portrait option (.s-hero__media--portrait on .s-hero__media): anchors the photo crop near the top so a person's face sits in the same place on every page. Use the full-size photo (home_hero_bryan.jpg), not the small founder_portrait.webp.
    Left-anchored option (.s-hero__media--left): keeps people on the left side of a wide photo in frame.
    Video option (1F, .s-hero__media--video): a 16:9 slot in place of the photo. A still poster image in brand colors (assets/photos/video_poster.svg) with a play icon (.s-hero__play), and an italic caption under it (.s-hero__caption). An optional line under the button (.s-hero__reassure) holds a short reassurance. When the video is ready, make .s-hero__play a link to the video (or swap in the player) and keep the poster as its cover.
+   Full-width headline option (1H, .s-hero--headline): the eyebrow and h1 move into .s-hero__head, a full-width row above the grid with a dark rule under it, and the h1 runs very large. The copy (first .s-hero__text becomes a bold subheading), buttons and media sit in the grid below. Works with the photo or video media. Used on the homepage.
    Text-only option (1G, .s-hero--text on .s-hero, no .s-hero__media): one full-width column on a white background, for pages that have no approved photo yet. Keep the copy short so the hero does not feel empty. When a photo is approved, remove .s-hero--text and add the .s-hero__media block back.
    Optional extras: eyebrow label, large subheadline under the headline, overlay card on the image (checklist, quote, or stat list), handwritten note, detail list (Industry / Focus / Channels, as on the case study), service tags over the photo (Plumbing / HVAC / Electrical / Exterior, as on Home Services).
    Mockups: every page.
@@ -55,7 +56,7 @@ approved by Bryan, and only then used on a page.
 
 8. Results
    Layouts: three photo cards with a big number each; or photo plus quote plus 4 stat tiles (featured result).
-   Options: numbers-first (8A with .s-results--numbers: the number moves off the photo and becomes the card headline in large blue type, with a shorter photo; use <strong class="s-results__stat">, and wrap a comparison like "vs 11%" in <small>). Used on the homepage.
+   Options: numbers-first (8A with .s-results--numbers: the number moves off the photo and becomes the card headline in large blue type, with a shorter photo; use <strong class="s-results__stat">, and wrap a comparison like "vs 11%" in <small>). Used on the homepage and How It Works.
 
 9. Stat grid
    Rows of big numbers with icon and label. 4 to 10 tiles.

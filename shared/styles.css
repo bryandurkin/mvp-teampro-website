@@ -697,6 +697,14 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
 .s-hero__play svg{width:36px;height:36px;margin-left:4px}
 .s-hero__caption{margin:14px 0 0;font-size:var(--fs-small);font-style:italic;line-height:1.5;color:var(--muted)}
 .s-hero__reassure{margin:12px 0 0;font-size:var(--fs-small);font-style:italic;line-height:1.5;color:var(--muted)}
+/* 1H. Full-width headline option: eyebrow and h1 run across the top above a rule, copy and media sit below */
+.s-hero--headline{background:var(--white)}
+.s-hero__head{padding:64px 0 28px;border-bottom:2px solid var(--ink)}
+.s-hero--headline h1{max-width:none;margin:0;font-size:clamp(2.75rem,6.6vw,5.75rem);font-weight:800;line-height:.98;letter-spacing:-.04em;text-wrap:balance}
+.s-hero--headline .s-hero__grid{min-height:0;background:linear-gradient(90deg,var(--white) 0 50%,var(--surface-soft) 50% 100%)}
+.s-hero--headline .s-hero__copy{padding-top:36px;padding-bottom:48px;justify-content:flex-start}
+.s-hero--headline .s-hero__text:first-child{font-size:clamp(1.125rem,1.6vw,1.3rem);font-weight:700;color:var(--ink)}
+@media(max-width:780px){.s-hero__head{padding:40px 0 20px}.s-hero--headline .s-hero__grid{background:var(--white)}.s-hero--headline .s-hero__copy{padding-top:24px}}
 /* A small text link under the button in the call-to-action band (18). */
 .s-cta .s-link{color:var(--on-dark);text-decoration:underline}
 /* A closing line under a step band (6). */
