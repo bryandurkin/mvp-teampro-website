@@ -108,3 +108,9 @@ In industrial B2B, getting past the gatekeeper to the right person is the hardes
 | 55 episodes | Episodes of MVP's own podcast, run on the Authority Hub system and team | Not a client result: MVP's own podcast | As of November 2026 | Not applicable | Supplied by Bryan Durkin for the Authority Hub page |
 | Two years | How long most owners have had the right content plan without publishing ("Most owners have had the right plan for two years and published nothing") | General observation across the owners we talk to, not one client's result | Not specified | Not applicable | Confirmed true by Bryan Durkin, 2026-11-11, for the Authority Hub page |
 | Most clients | Share of Authority Hub clients who are never on camera ("Most of our clients never are") | All Authority Hub clients | As of November 2026 | Not applicable | Confirmed true by Bryan Durkin, 2026-11-11, for the Authority Hub page FAQ |
+
+## Page wording approved by Bryan (2026-11-12)
+
+| Number | What it measures | Client or "all clients" | Time period | Can we name the client (yes/no) | Source |
+|---|---|---|---|---|---|
+| 100% | Figure of speech on the Marketing & Content Support page, not a measured result ("When becoming the authority is the objective, this is where we put 100% of the focus.") | Not a client result | Not applicable | Not applicable | Approved by Bryan Durkin, 2026-11-12, for the Marketing & Content Support page |
