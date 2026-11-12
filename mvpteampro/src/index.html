@@ -9,12 +9,12 @@
 <!-- include: header -->
 
 <main id="main">
-<!-- 1. Hero (library 1F: video slot, with the 1H full-width headline option). The video is a poster for now. When the animated explainer is ready, make .s-hero__play a link: <a class="s-hero__play" href="VIDEO_URL" aria-label="Play the explainer video">.
+<!-- 1. Hero (library 1F: video slot, with the 1H full-width headline option and its struck-word style). The video is a poster for now. When the animated explainer is ready, make .s-hero__play a link: <a class="s-hero__play" href="VIDEO_URL" aria-label="Play the explainer video">.
      Every AI Visibility Report button on this page uses {{LEAK_REPORT_URL}} from shared/config.json. -->
-<section class="s-hero s-hero--headline">
+<section class="s-hero s-hero--headline s-hero--strike">
   <div class="container s-hero__head">
     <p class="s-eyebrow">For established business owners</p>
-    <h1>We Turn &ldquo;Should&rdquo; Into <span>&ldquo;Done.&rdquo;</span></h1>
+    <h1>We Turn <span class="s-hero__struck">&ldquo;Should&rdquo;</span> <span class="s-hero__line">Into <span>&ldquo;Done.&rdquo;</span></span></h1>
   </div>
   <div class="s-hero__grid">
     <div class="s-hero__copy">
@@ -26,12 +26,12 @@
     </div>
     <div class="s-hero__media s-hero__media--video">
       <figure class="s-hero__figure">
-        <div class="s-hero__video">
-          <img src="assets/photos/video_poster.svg" alt="" width="1280" height="720">
-          <span class="s-hero__play" role="img" aria-label="Video coming soon"><span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z" clip-rule="evenodd"/></svg></span></span>
-        </div>
-        <figcaption class="s-hero__caption">Watch: the two things every owner should be doing, and how we do them for you.</figcaption>
-      </figure>
+            <div class="s-hero__video">
+              <img src="assets/photos/video_poster.svg" alt="" width="1280" height="720">
+              <span class="s-hero__play" role="img" aria-label="Video coming soon"><span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z" clip-rule="evenodd"/></svg></span></span>
+            </div>
+            <figcaption class="s-hero__caption">Watch: the two things every owner should be doing, and how we do them for you.</figcaption>
+          </figure>
     </div>
   </div>
 </section>
