@@ -69,6 +69,7 @@ approved by Bryan, and only then used on a page.
 11. Image plus text split
     Image on one side, heading and paragraphs on the other.
     Founder bio is a version of this (portrait, quote, signature).
+    Founder on navy option (11C with .s-bg-navy on the section): a dark split with a larger portrait, white quote with a light blue rule, light blue signature. Counts as a high-contrast break. Used on the homepage, right after the results.
     Mockups: Why MVP Team Pro Exists, Built to Support Real Businesses (About).
 
 12. Testimonial

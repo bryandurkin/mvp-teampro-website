@@ -335,6 +335,15 @@ a.nav-link:hover,.dropdown-toggle:hover,.nav-item:focus-within>.nav-link{color:v
 .s-split__body p.s-split__signature{margin:16px 0 0;font-family:var(--hand);font-size:2.25rem;line-height:1;color:var(--brand)}
 .s-split__name{margin-top:6px;font-size:var(--fs-small);color:var(--muted)}
 .s-split__name strong{display:block;font-size:var(--fs-body);color:var(--ink)}
+/* 11C founder on navy option (.s-split--founder.s-bg-navy): a dark split with a larger portrait */
+.s-split--founder.s-bg-navy{padding:88px 0}
+.s-split--founder.s-bg-navy .s-split__grid{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:64px}
+.s-split--founder.s-bg-navy .s-split__media img{box-shadow:var(--shadow-lift)}
+.s-bg-navy .s-split__body p:not(.s-eyebrow){color:var(--on-dark-muted)}
+.s-bg-navy .s-split__quote{border-left-color:var(--accent-light);font-size:1.5rem;color:var(--on-dark)}
+.s-bg-navy .s-split__body p.s-split__signature{color:var(--accent-light)}
+.s-bg-navy .s-split__name{color:var(--on-dark-muted)}.s-bg-navy .s-split__name strong{color:var(--on-dark)}
+@media(max-width:780px){.s-split--founder.s-bg-navy{padding:56px 0}.s-split--founder.s-bg-navy .s-split__grid{grid-template-columns:1fr;gap:28px}.s-split--founder.s-bg-navy .s-split__media{max-width:360px}.s-bg-navy .s-split__quote{font-size:1.25rem}}
 
 /* 12. Testimonial */
 .s-testimonial__band{display:grid;grid-template-columns:200px minmax(0,1fr) auto;gap:32px;align-items:center;overflow:hidden;border:1px solid var(--card-line);border-radius:var(--radius);background:var(--brand-tint)}
